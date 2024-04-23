@@ -4,6 +4,9 @@ repo_name: Kalp studio knowledge layer
 copyright: Copyright 2024 Kalp studio. All rights reserved.
 repo_url: https://github.com/siddheshp2e/Technical_Documentation
 
+
+
+
 theme:
   font: 
     code: Poppins
@@ -41,7 +44,6 @@ theme:
     - media: "(prefers-color-scheme)"
       primary: white
       scheme: default
-      accent: deep orange
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
@@ -54,6 +56,7 @@ theme:
       toggle:
         icon: material/eye
         name: Switch to dark mode
+  
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
@@ -71,16 +74,39 @@ theme:
   - open-in-new-tab
   - git authors
   
-  markdown_extensions:
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.codehilite:
-  - pymdownx.inlinehilite:
-  pymdownx.highlight:
+
+
+#  markdown_extensions:
+#  - pymdownx.highlight:
+#      anchor_linenums: true
+#      line_spans: __span
+#      pygments_lang_class: true
+#  - pymdownx.inlinehilite
+#  - pymdownx.snippets
+#  - pymdownx.superfences
+#  - pymdownx.highlight
+#  - pymdownx.inlinehilite
+#  - pymdownx.keys
+
+markdown_extensions:
+  - pymdownx.highlight:
       anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+
+
 
 extra:
   social:
