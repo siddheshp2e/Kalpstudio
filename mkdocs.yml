@@ -3,7 +3,7 @@ site_author: Siddhesh Patankar
 repo_name: Kalp studio knowledge layer
 copyright: Copyright 2024 Kalp studio. All rights reserved.
 repo_url: https://github.com/siddheshp2e/Technical_Documentation
-
+site_url: http://127.0.0.1:8000/
 
 
 
@@ -12,6 +12,7 @@ theme:
     code: Poppins
   name: material
   logo: images/PNG.png
+    #- link: Introduction/Welcome.md
   favicon: images/PNG.png
   features:
     - announce.dismiss
@@ -104,7 +105,7 @@ markdown_extensions:
   - pymdownx.mark
   - attr_list
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 nav:
@@ -134,16 +135,16 @@ nav:
           - How can i view and edit my profile through settings: 'Getting started/Settings/How can i view and edit my profile through settings.md'
   - Dev documentation:
       - Use the kalp SDK:
-          - Kalp Golang SDK: 'Dev documentation/Use the kalp SDK/kalp Golang SDK.md'
+          - Kalp Golang SDK: 'Dev documentation/Use the kalp SDK/Kalp Golang SDK.md'
       - KRC Token Standard:
           - KRC 20 Token Contract: 'Dev documentation/KRC Token Standard/KRC 20 Token Contract.md'
           - KRC 721 Token Contract: 'Dev documentation/KRC Token Standard/KRC 721 Token Contract.md'
           - KRC 1155 Token Contract: 'Dev documentation/KRC Token Standard/KRC 1155 Token Contract.md'
       - Smart Contract Write,Test, Deploy & Interact:
-          - Write the smart contract: 'Dev documentation/Smart Contract Write,Test, Deploy & Interact/Write the smart contract.md'
-          - Test the smart contract: 'Dev documentation/Smart Contract Write,Test, Deploy & Interact/Test the smart contract.md'
-          - Deploy the smart contract: 'Dev documentation/Smart Contract Write,Test, Deploy & Interact/Deploy the smart contract.md'
-          - Interacting with smart contract: 'Dev documentation/Smart Contract Write,Test, Deploy & Interact/Interacting with smart contract.md'
+          - Write the smart contract: 'Dev documentation/Smart Contract Write, Test, Deploy & Interact/Write the smart contract.md'
+          - Test the smart contract: 'Dev documentation/Smart Contract Write, Test, Deploy & Interact/Test the smart contract.md'
+          - Deploy the smart contract: 'Dev documentation/Smart Contract Write, Test, Deploy & Interact/Deploy the smart contract.md'
+          - Interacting with smart contract: 'Dev documentation/Smart Contract Write, Test, Deploy & Interact/Interacting with smart contract.md'
   - Release notes:
       - Release version 1.0.0:
           - Release notes version 1.0.0: 'Release notes/Release version 1.0.0/Release notes version 1.0.0.md'
