@@ -1,6 +1,5 @@
 # Interacting with smart contract
 
-Interacting with Smart Contract
 
 Interacting with Your Smart Contract
 

@@ -6,15 +6,14 @@ To ensure the security of your identity on Kalp Studio, we have implemented a KY
 
 Let us now go through the KYC process for Indian users
 
-### 
-
-KYC: Indian Users
+## **KYC: Indian Users**
 
 **Step 1:**
 
 Login to Kalp Studio Application. For new users Complete KYC is displayed as you log in. Click on **Complete KYC**.
 
 ![](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006995548%2Foriginal%2Fk2EMIkvhkgjdwkG3kbyb51XMfupko5LeYQ.png%3F1708437415&width=768&dpr=4&quality=100&sign=4d1c35f6bfda8818bf7ab647edd203e9dc6844dfa1eb410caa9aabe2ffa32f92)
+
 
 Figure 1: Complete KYC
 
@@ -68,7 +67,8 @@ Figure 6: Pan Card uploaded
 
 Now you'll need to upload your AADHAR Card as proof of address verification.
 
-> _**Note:**_ _Maximum allowed file size is 64MB._
+!!! Note
+    Maximum allowed file size is 64MB._
 
 ![](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006995738%2Foriginal%2FIyyoR4sHuwE6Y9afiBxtU4XhZloyIIUWUQ.png%3F1708437735&width=768&dpr=4&quality=100&sign=e39526d2fc8b2ee627b0132ce2f3af7613a3c88e084953b1512faff0078c6727)
 

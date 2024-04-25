@@ -4,7 +4,7 @@ This guide serves as a roadmap, navigating you through the intricacies of crafti
 
 ## 
 
-Overview
+**Overview**
 
 This document provides technical details and guidelines for interacting with an KRC721 token contract implemented in Go. This contract utilizes the Kalp SDK to facilitate operations within a blockchain network, enabling the creation, management, and transfer of non-fungible tokens (NFTs).
 
@@ -16,16 +16,14 @@ This document provides technical details and guidelines for interacting with an 
     
 -   Installed KalpSDK environment
     
--   **Note**: The SDK is compatible with Go version 1.19> or <1.20.
+!!!Note 
+    The SDK is compatible with Go version 1.19> or <1.20.
     
 
-## 
 
-Contract Functions
+###
 
-### 
-
-Initialize Function
+**Initialize Token Contract**
 
 The `Initialize` method serves as a crucial first step in configuring a **Kalp-based ERC721 token contract**. It establishes the **name** and **symbol** that will be indelibly associated with the token collection, ensuring clarity and consistency throughout its lifecycle.
 
@@ -88,7 +86,7 @@ func (c *TokenERC721Contract) MintWithTokenURI(ctx kalpsdk.TransactionContextInt
 
 ### 
 
-Burn Function
+**Burn Function**
 
 The `Burn` method wields the definitive power to permanently remove NFTs (Non-Fungible Tokens) from the Kalp ecosystem, executing an irreversible act of destruction that revokes their presence and ownership. It serves as a mechanism for managing token supply, addressing specific use cases, or even symbolizing artistic expression.
 
@@ -113,7 +111,7 @@ func (c *TokenERC721Contract) Burn(ctx kalpsdk.TransactionContextInterface, toke
 
 ### 
 
-TransferFrom Function
+**TransferFrom Function**
 
 The `TransferFrom` method sits at the heart of NFT (Non-Fungible Token) movement within the Kalp ecosystem, meticulously orchestrating the transfer of ownership from one entity to another. It stands as the cornerstone for enabling seamless transactions, trading, and sharing of NFTs.
 
@@ -145,7 +143,7 @@ func (c *TokenERC721Contract) TransferFrom(ctx kalpsdk.TransactionContextInterfa
 
 ### 
 
-Approve Function
+**Approve Function**
 
 The `Approve` method empowers NFT (Non-Fungible Token) owners within the Kalp ecosystem to selectively bestow transfer authority upon designated accounts, granting them the ability to move specific NFTs on behalf of the owner. This flexibility facilitates a range of collaborative and trust-based interactions.
 
@@ -175,7 +173,7 @@ func (c *TokenERC721Contract) Approve(ctx kalpsdk.TransactionContextInterface, o
 
 ### 
 
-SetApprovalForAll Function
+**SetApprovalForAll Function**
 
 The `SetApprovalForAll` method within the Kalp ecosystem empowers NFT (Non-Fungible Token) owners to confer **blanket approval** to designated accounts (operators). This grants the operator the ability to transfer **all** of the owner's NFTs, acting as a powerful tool for managing large collections or streamlining specific use cases.
 
@@ -205,7 +203,7 @@ func (c *TokenERC721Contract) SetApprovalForAll(ctx kalpsdk.TransactionContextIn
 
 ### 
 
-BalanceOf Function
+**BalanceOf Function**
 
 The `BalanceOf` method acts as a digital accountant within the Kalp ecosystem, meticulously cataloging NFT (Non-Fungible Token) collections. It enables you to precisely determine the number of NFTs held by a specific account, serving as a crucial tool for understanding ownership patterns, token scarcity, and personal collections.
 
@@ -233,7 +231,7 @@ func (c *TokenERC721Contract) BalanceOf(ctx kalpsdk.TransactionContextInterface,
 
 ### 
 
-OwnerOf Function
+**OwnerOf Function**
 
 Within the Kalp NFT landscape, the `OwnerOf` method serves as a steadfast guide, revealing the rightful owner of a specified NFT. It acts as a fundamental tool for establishing ownership, ensuring responsible transfer, and upholding accountability within this dynamic ecosystem.
 
@@ -263,7 +261,7 @@ func (c *TokenERC721Contract) OwnerOf(ctx kalpsdk.TransactionContextInterface, t
 
 ### 
 
-GetApproved Function
+**GetApproved Function**
 
 The `GetApproved` method acts as a trustworthy informant, revealing the account specifically authorized to transfer a designated NFT on behalf of its owner. It serves as a vital tool for understanding transfer permissions and managing collaborative ownership scenarios.
 
@@ -293,7 +291,7 @@ func (c *TokenERC721Contract) GetApproved(ctx kalpsdk.TransactionContextInterfac
 
 ### 
 
-IsApprovedForAll Function
+**IsApprovedForAll Function**
 
 The `IsApprovedForAll` method assumes the role of a meticulous gatekeeper, determining whether a designated account (operator) holds sweeping authority to manage **the entire collection** of NFTs belonging to a specific owner. It acts as a cornerstone for managing extensive collections and facilitating collaborative ownership structures.
 
@@ -328,7 +326,7 @@ func (c *TokenERC721Contract) IsApprovedForAll(ctx kalpsdk.TransactionContextInt
 
 ### 
 
-Name Function
+**Name Function**
 
 the `Name` method fulfills the role of a skillful archivist, divulging the distinct title bestowed upon a token collection. It serves as a fundamental means of identifying and referencing collections, fostering clarity and discoverability.
 
@@ -353,7 +351,7 @@ func (c *TokenERC721Contract) Name(ctx kalpsdk.TransactionContextInterface) (str
 
 ### 
 
-Symbol Function
+**Symbol Function**
 
 The `Symbol` method acts as a herald, disclosing the succinct and potent symbol that serves as a collection's emblematic signature. It empowers concise identification and efficient referencing, akin to a heraldic crest in the digital realm.
 
@@ -378,7 +376,7 @@ func (c *TokenERC721Contract) Symbol(ctx kalpsdk.TransactionContextInterface) (s
 
 ### 
 
-TokenURI Function
+**TokenURI Function**
 
 Returns the metadata URI of an NFT.
 
@@ -405,7 +403,7 @@ func (c *TokenERC721Contract) TokenURI(ctx kalpsdk.TransactionContextInterface, 
 
 ### 
 
-TotalSupply Function
+**TotalSupply Function**
 
 the `TokenURI` method plays the role of a trusty navigator, leading explorers to a digital harbor brimming with an NFT's rich metadata. It serves as a fundamental gateway to an NFT's unique traits, captivating imagery, and captivating stories.
 
@@ -437,11 +435,11 @@ func (c *TokenERC721Contract) TotalSupply(ctx kalpsdk.TransactionContextInterfac
 
 ### 
 
-Helper Methods
+**Helper Methods**
 
 #### 
 
-checkInitialized Function
+**checkInitialized Function**
 
 the `checkInitialized` method serves as a vigilant sentinel, safeguarding system integrity and ensuring the contract is in a fit state for operation. It acts as a crucial checkpoint, guaranteeing all essential setup procedures have been meticulously completed before transactions and interactions can commence.
 
@@ -492,6 +490,6 @@ Security remains paramount within the Kalp NFT ecosystem. To safeguard the contr
 
 ### 
 
-Conclusion
+**Conclusion**
 
 This KRC721 token contract provides a comprehensive set of functionalities for managing NFTs, including the creation, transfer, and querying of ownership and metadata. The above documentation offers a detailed guide for developers to effectively interact with and integrate these capabilities within their applications or platforms.

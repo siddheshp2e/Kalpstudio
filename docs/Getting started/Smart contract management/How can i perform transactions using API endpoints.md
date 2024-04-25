@@ -26,7 +26,8 @@ Figure 2: Check Params
 
 Copy and paste the parameters to the <request body> in the Postman or any other API platform that you are using. Generate and copy the AUTH Key in the request header as <x-api-key>.
 
-_**Note:**_ _If AUTH key is not generated, create the API AUTH key as it is required to complete the transaction._
+!!! Note 
+    If AUTH key is not generated, create the API AUTH key as it is required to complete the transaction._
 
 ![](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060007156704%2Foriginal%2F8UUzHAkPhuBo5E_s9YlnTKj2zoW1RaC_lQ.png%3F1708688367&width=768&dpr=4&quality=100&sign=527dd535cd628b424b60b67e5d0124cae1c9009122f3c7bad2a018d0688caf0c)
 

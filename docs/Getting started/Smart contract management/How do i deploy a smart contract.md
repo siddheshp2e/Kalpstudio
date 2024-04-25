@@ -8,7 +8,8 @@ Tired of complex coding and deployment hassles? Building a Smart Contract should
 
 So, let’s begin with the Smart Contract creation on Kalp Studio.
 
-**Note:** To deploy a Smart Contract, a project is needed. Let's understand how a project is created first.
+!!! Note 
+    To deploy a Smart Contract, a project is needed. Let's understand how a project is created first.
 
 **Step 1: Project Initialization**
 

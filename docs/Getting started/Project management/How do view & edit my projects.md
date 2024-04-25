@@ -31,7 +31,8 @@ The following fields are displayed here:
 -   **Created On: Date on which the project is created.**
     
 
-> _**Note:**_ _10 records per page are displayed._
+!!! Note
+    10 records per page are displayed._
 
 ![](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006983029%2Foriginal%2FxB61YLe4Vx9Kq9QeKaj5DqTSNzw6vhxvig.png%3F1708424870&width=768&dpr=4&quality=100&sign=1c86ee7074d677534ed0f9af46a8012d1d9140bbc3638f699cbaf75c6d586fe9)
 

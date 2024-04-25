@@ -8,7 +8,7 @@ Smart Contract Verification and Testing
 
 Copy
 
-```
+```go linenums="1"
 $ go build .
 ```
 

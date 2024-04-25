@@ -6,7 +6,8 @@ Crafting your Smart Contract with Kalp's template was just the first step. Now, 
 
 Let's explore Smart Contract deployment using Kalp Template on Kalp Studio together.
 
-**Note:** _To deploy a Smart Contract, a project is needed. Let's understand how a project is created first._
+!!!Note 
+    To deploy a Smart Contract, a project is needed. Let's understand how a project is created first._
 
 **Step 1: Project Initialization**
 

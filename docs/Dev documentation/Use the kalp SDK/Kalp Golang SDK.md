@@ -4,13 +4,13 @@ This documentation provides an in-depth guide to the Kalp Software Development K
 
 ## 
 
-Overview
+**Overview**
 
 The Kalp SDK is engineered to streamline the development process for Kalp blockchain applications. It offers a suite of tools and functionalities that enable developers to efficiently read and write data, manage transactions, perform KYC checks, track payments for payable contracts, and enhance debugging through logger functionality.
 
 ## 
 
-Key Features
+**Key Features**
 
 The Kalp SDK empowers developers with a robust suite of functionalities designed to simplify and enhance smart contract interaction:
 
@@ -27,7 +27,7 @@ The Kalp SDK empowers developers with a robust suite of functionalities designed
 
 ### 
 
-Prerequisites
+**Prerequisites**
 
 Before you begin, ensure you have the following installed:
 
@@ -35,13 +35,13 @@ Before you begin, ensure you have the following installed:
 
 ## 
 
-Kalp SDK Installation
+**Kalp SDK Installation**
 
 Integrating the Kalp SDK into your project is a breeze. To install the Kalp-SDK, use the following Go command:
 
 Copy
 
-```
+``` go linenums="1" 
 go get -u github.com/p2eengineering/kalp-sdk-public/kalpsdk
 ```
 
@@ -49,21 +49,22 @@ This command utilizes the `go get` package management tool within Go to download
 
 Done! The Kalp SDK is ready to be imported and utilized within your Go project, empowering you to interact with Kalp smart contracts and leverage the platform's functionalities.
 
-_**Note**__: The SDK is compatible with_ _**Go version 1.19**__. For newer versions of Go, update your_ `_go.mod_` _file to specify version 1.19._
+!!!Note 
+    The SDK is compatible with_ _**Go version 1.19**__. For newer versions of Go, update your_ `_go.mod_` _file to specify version 1.19._
 
 ## 
 
-Examples
+**Examples**
 
 ### 
 
-Creating a Contract
+**Creating a Contract**
 
 Define a Go struct to represent your contract and embed `kalpsdk.Contract` for base functionalities.
 
 Copy
 
-```
+```go linenums="1"
 type MyContract struct {
     kalpsdk.Contract
 }
@@ -75,13 +76,13 @@ type MyContract struct {
 
 ### 
 
-Implementing the Contract Interface
+**Implementing the Contract Interface**
 
 Implement `Init` and `Invoke` methods for contract initialization and invocation.
 
 Copy
 
-```
+```go linenums="1"
  func (c *MyContract) Init(ctx kalpsdk.TransactionContextInterface) error {
     // Initialization logic
     return nil
@@ -112,13 +113,13 @@ To breathe functionality into your smart contract, implement the following cruci
 
 ### 
 
-Creating and Starting Chaincode
+**Creating and Starting Chaincode**
 
 Instantiate your contract and start the chaincode.
 
 Copy
 
-```
+```go linenums="1"
 // Sample payable contract object
 contract := kalpsdk.Contract{IsPayableContract: true}
 
@@ -161,7 +162,7 @@ Call the `Start` function on the chaincode instance to start your chaincode.
 
 Copy
 
-```
+```go linenums="1"
 if err := chaincode.Start(); err != nil {
   panic(fmt.Sprintf("Error starting chaincode: %v", err))
 }
@@ -183,13 +184,13 @@ Call the `Start()` method on the chaincode object to initiate its execution and 
 
 ## 
 
-Blockchain Data Management
+**Blockchain Data Management**
 
 This section details the core functionalities available for managing data on the blockchain.
 
 ### 
 
-Writing to the Kalp Blockchain
+**Writing to the Kalp Blockchain**
 
 This section delves into the process of writing data onto the Kalp blockchain, enabling persistent storage and facilitating diverse applications.
 
@@ -201,7 +202,7 @@ This function allows writing data to the ledger with KYC verification, ensuring 
 
 Copy
 
-```
+```go linenums="1"
 err := ctx.PutStateWithKyc("myKey", []byte("myValue"))
 if err != nil {
     // Handle error
@@ -250,7 +251,7 @@ The `PutStateWithoutKyc` function within the Kalp SDK offers an alternative appr
 
 Copy
 
-```
+```go linenums="1"
 err := ctx.PutStateWithoutKyc("myKey", []byte("myValue"))
 if err != nil {
     // Handle error
@@ -279,7 +280,7 @@ By understanding the distinct functionalities of `PutStateWithKyc` and `PutState
 
 ## 
 
-Reading from the Kalp Blockchain
+**Reading from the Kalp Blockchain**
 
 ### 
 
@@ -296,7 +297,7 @@ The `GetState` function within the Kalp SDK empowers you to retrieve data stored
 
 Copy
 
-```
+```go linenums="1"
 value, err := ctx.GetState("myKey")
 if err != nil {
     // Handle error
@@ -332,7 +333,7 @@ if err != nil {
 
 ## 
 
-Deleting from the Kalp Blockchain
+**Deleting from the Kalp Blockchain**
 
 ### 
 
@@ -351,7 +352,7 @@ This functionality safeguards the integrity of the ledger by ensuring only autho
 
 Copy
 
-```
+```go linenums="1"
 err := ctx.DelStateWithKyc("myKey")
 if err != nil {
     // Handle error
@@ -394,7 +395,7 @@ The `DelStateWithoutKyc` function within the Kalp SDK offers a way to remove dat
 
 Copy
 
-```
+```go linenums="1"
 err := ctx.DelStateWithoutKyc("myKey")
 if err != nil {
     // Handle error
@@ -429,7 +430,7 @@ The `GetKYC` function within the Kalp SDK empowers you to **verify a user's KYC 
 
 Copy
 
-```
+```go linenums="1"
 Kyced, err := ctx.GetKYC("userId")
 if err != nil {
     // Handle error
@@ -468,7 +469,7 @@ if err != nil {
 
 ### 
 
-Conclusion
+**Conclusion**
 
 The Kalp-SDK offers a robust set of tools for developers building decentralized applications on the Kalp blockchain network. By leveraging the SDK's functionalities, developers can efficiently manage data, transactions, and compliance requirements, facilitating a streamlined development process.
 

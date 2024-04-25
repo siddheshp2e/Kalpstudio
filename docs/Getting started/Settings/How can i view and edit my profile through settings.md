@@ -118,7 +118,8 @@ You can modify the Name. Email and User ID cannot be changed. Click on **Save** 
 
 Click on the **API** **Auth Key** tab. Details of previously generated API Auth Key are displayed. This includes fields like Key Name, Last Used, Status, API Auth Key, and Date Created.
 
-> _**Note:**_ _10 records per page are displayed._
+!!!Note 
+    10 records per page are displayed._
 
 ![](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006983941%2Foriginal%2FJJimbX009VEN7xZTEC-ldrvF0apBgMTCTQ.png%3F1708425529&width=768&dpr=4&quality=100&sign=7b993deb076dbb48b65ed5b92eb72a980d0b35c9032662f94488af295d288ca7)
 

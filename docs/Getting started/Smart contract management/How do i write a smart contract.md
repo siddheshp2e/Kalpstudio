@@ -60,7 +60,7 @@ Creating and Starting Chaincode
 
 Copy
 
-```
+```go linenums="1"
 $ mkdir my-smart-contract
 $ cd my-smart-contract
 ```
@@ -70,7 +70,7 @@ $ cd my-smart-contract
 
 Copy
 
-```
+```go linenums="1"
 $ go mod init my-smart-contract
 ```
 
@@ -79,7 +79,7 @@ $ go mod init my-smart-contract
 
 Copy
 
-```
+```go linenums="1"
 $ go get -u github.com/p2eengineering/kalp-sdk-public/kalp
 ```
 
@@ -87,7 +87,7 @@ $ go get -u github.com/p2eengineering/kalp-sdk-public/kalp
 
 Copy
 
-```
+```go linenums="1"
 go: downloading golang.org/x/exp v0.0.0-20240222234643-814bf88cf225
 go: downloading golang.org/x/sys v0.17.0
 go: downloading google.golang.org/grpc v1.62.0
@@ -137,7 +137,7 @@ go: added gopkg.in/yaml.v3 v3.0.1
 
 Copy
 
-```
+```go linenums="1"
 package main
 
 import (
@@ -182,7 +182,7 @@ This newly created file will encompass the following core elements:
 
 Copy
 
-```
+```go linenums="1"
 package main
 
 import (
@@ -242,16 +242,15 @@ The `main.go` file stands as the conductor that orchestrates the initialization 
 -   **Chaincode Activation:**`**if err := chaincode.Start(); err != nil { ... }**`**:** This block calls the `Start()` function on the instantiated chaincode, triggering the execution of your smart contract within the Kalp blockchain environment. Once again, error handling is incorporated to gracefully address any issues that might impede chaincode startup.
     
 
-_**Note:**_
-
-_**Payment Tracking for Payable Contracts:**_ _Pass your contract_ `_struct_` _as an argument to the_ `_NewChaincode_` _function and specify whether the contract is payable or not._
+!!! NOTE "Payment Tracking for Payable Contracts"
+    Pass your contract_ `_struct_` _as an argument to the_ `_NewChaincode_` _function and specify whether the contract is payable or not._
 
 1.  **Vendoring the dependencies:** This places the external dependencies for your smart contract into a local `vendor` directory.
     
 
 Copy
 
-```
+```go linenums="1"
 $ go mod vendor
 ```
 
@@ -260,7 +259,7 @@ $ go mod vendor
 
 Copy
 
-```
+```go linenums="1"
 Folder name
 ├──vendor
 ├──go.mod
@@ -282,7 +281,7 @@ Folder name
 
 Copy
 
-```
+```go linenums="1"
 type MyContract struct {
 kalpsdk.Contract
 }
@@ -293,7 +292,7 @@ kalpsdk.Contract
 
 Copy
 
-```
+```go linenums="1"
 func (c *MyContract) Init(ctx kalpsdk.TransactionContextInterface) error {
 // Initialization logic return nil
 }
@@ -344,7 +343,7 @@ Writing to the Blockchain
 
 Copy
 
-```
+```go linenums="1"
 err := ctx.PutStateWithKyc("myKey", []byte("myValue")) if err != nil {
  // Handle error 
  } else {
@@ -358,7 +357,7 @@ err := ctx.PutStateWithKyc("myKey", []byte("myValue")) if err != nil {
 
 Copy
 
-```
+```go linenums="1"
 err := ctx.PutStateWithoutKyc("myKey", []byte("myValue"))
 if err != nil {
     // Handle error

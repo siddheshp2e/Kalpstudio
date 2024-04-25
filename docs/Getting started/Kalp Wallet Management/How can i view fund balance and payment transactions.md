@@ -77,7 +77,8 @@ In this section, the [**Add Funds**](https://care.kalp.studio/a/solutions/articl
 -   **Timestamp:** This shows the date and time of the add fund.
     
 
-> _**Note:**_ _10 records per page are displayed._
+!!!Note 
+    10 records per page are displayed._
 
 **Paging**
 

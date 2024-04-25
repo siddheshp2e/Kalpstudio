@@ -6,9 +6,7 @@ To ensure the security of your identity on Kalp Studio, we have implemented a KY
 
 Let’s check out how it's done.
 
-### 
-
-KYC: International Users
+## **KYC: International Users**
 
 Let us now go through the KYC process for International users.
 
@@ -72,7 +70,8 @@ Figure 7: Continue Verification on mobile phone
 
 Click Selfie. To do this click on **I'm Ready**.
 
-> _**Note:**_ _Ensure your face is within the frame. Move your head in a circular direction._
+!!! Note
+    Ensure your face is within the frame. Move your head in a circular direction._
 
 ![](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006776640%2Foriginal%2FSXyD6m2mUCaKNX4IWXXvXmX79L-9cc6_VA.png%3F1707889130&width=768&dpr=4&quality=100&sign=d21e1c4a0940af4d19978d4c4da402a936571f25b0db40e670a6dd361bda1d94)
 
