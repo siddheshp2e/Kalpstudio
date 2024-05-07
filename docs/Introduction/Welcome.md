@@ -1,9 +1,3 @@
-Dive headfirst into Web 3.0 development with Kalp Studio! Our user-friendly documentation equips you with everything you need to unlock the potential of the Kalp Blockchain.
-
-![Kalp studio cover page](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2F1878384301-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FzAA5Z6u1ZyGAxXbYfExA%252Fuploads%252F0wolf4RcmvIGO2Kda5iV%252FSlide2.PNG%3Falt=media%26token=b7f5782e-7bbb-4e7c-b715-6b85309cd009&width=1248&dpr=4&quality=100&sign=f404bc261e66d9c9be8da30e80d5cbfb68b2f9e919fde449c4bd674f963533af)
-
-## About Kalp Studio
-
 **Kalp Studio** empowers developers of all skill levels to navigate the exciting realm of Web 3.0 development using the robust Kalp Blockchain. It leverages a low-code approach, enabling both beginners and seasoned Web 2.0 developers to effortlessly create cutting-edge Web 3.0 applications or seamlessly extend existing applications into the decentralized world.
 
 ## Key Capabilities

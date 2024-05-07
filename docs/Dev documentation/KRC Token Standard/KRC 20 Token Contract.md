@@ -27,7 +27,11 @@ The `Initialize` function initializes a token contract with essential details, m
 
 **Implementation (Go):**
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 // Set information for a token and initialize contract.
@@ -89,7 +93,11 @@ The `Mint` function enables the creation of new tokens and subsequent additions 
 
 **Implementation (Go):**
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 // Mint creates new tokens and adds them to minter's account balance.
@@ -124,7 +132,11 @@ The `Burn` function permanently removes a specified number of tokens from the mi
 
 **Implementation (Go):**
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ```js linenums="1"
 func (s *SmartContract) Burn(sdk kalpsdk.TransactionContextInterface, amount int) error {
@@ -158,7 +170,11 @@ The `Transfer` function facilitates the movement of tokens between accounts with
 
 **Implementation (Go):**
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 // Transfer transfers tokens from the client account to the recipient account.
@@ -196,7 +212,11 @@ The `BalanceOf` function serves as a key tool for retrieving the token balance a
 
 **Implementation (Go):**
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 // BalanceOf returns the balance of the given account.
@@ -234,7 +254,11 @@ The `Approve` function empowers the caller (the account initiating the transacti
 
 **Implementation (Go):**
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 // Approve allows the spender to withdraw from the calling client's token account.
@@ -274,7 +298,11 @@ The `Allowance` function serves as a vital tool for **retrieving the remaining a
 
 **Implementation (Go):**
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 func (s *SmartContract) Allowance(sdk kalpsdk.TransactionContextInterface, owner string, spender string) (int, error) {
@@ -314,7 +342,11 @@ The `TransferFrom` function empowers a designated **spender** to initiate token 
 
 **Implementation (Go):**
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 func (s *SmartContract) TransferFrom(sdk kalpsdk.TransactionContextInterface, from string, to string, value int) error {
@@ -351,7 +383,11 @@ The `Name` function serves as a fundamental tool for accessing the **descriptive
 
 **Implementation (Go):**
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 func (s *SmartContract) Name(sdk kalpsdk.TransactionContextInterface) (string, error) {
@@ -379,7 +415,11 @@ The `Symbol` function acts as a dedicated tool for retrieving the **unique symbo
 
 **Implementation (Go):**
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 func (s *SmartContract) Symbol(sdk kalpsdk.TransactionContextInterface) (string, error) {
@@ -407,7 +447,11 @@ The `TotalSupply` function serves as a vital tool for retrieving the **total num
 
 **Implementation (Go):**
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 func (s *SmartContract) TotalSupply(sdk kalpsdk.TransactionContextInterface) (int, error) {

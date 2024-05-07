@@ -39,8 +39,11 @@ Before you begin, ensure you have the following installed:
 
 Integrating the Kalp SDK into your project is a breeze. To install the Kalp-SDK, use the following Go command:
 
+<<<<<<< HEAD
 Copy
 
+=======
+>>>>>>> main
 ``` go linenums="1" 
 go get -u github.com/p2eengineering/kalp-sdk-public/kalpsdk
 ```
@@ -62,8 +65,11 @@ Done! The Kalp SDK is ready to be imported and utilized within your Go project, 
 
 Define a Go struct to represent your contract and embed `kalpsdk.Contract` for base functionalities.
 
+<<<<<<< HEAD
 Copy
 
+=======
+>>>>>>> main
 ```go linenums="1"
 type MyContract struct {
     kalpsdk.Contract
@@ -80,8 +86,11 @@ type MyContract struct {
 
 Implement `Init` and `Invoke` methods for contract initialization and invocation.
 
+<<<<<<< HEAD
 Copy
 
+=======
+>>>>>>> main
 ```go linenums="1"
  func (c *MyContract) Init(ctx kalpsdk.TransactionContextInterface) error {
     // Initialization logic
@@ -117,8 +126,11 @@ To breathe functionality into your smart contract, implement the following cruci
 
 Instantiate your contract and start the chaincode.
 
+<<<<<<< HEAD
 Copy
 
+=======
+>>>>>>> main
 ```go linenums="1"
 // Sample payable contract object
 contract := kalpsdk.Contract{IsPayableContract: true}
@@ -160,8 +172,11 @@ Once your smart contract is defined and implemented, proceed with these steps to
 
 Call the `Start` function on the chaincode instance to start your chaincode.
 
+<<<<<<< HEAD
 Copy
 
+=======
+>>>>>>> main
 ```go linenums="1"
 if err := chaincode.Start(); err != nil {
   panic(fmt.Sprintf("Error starting chaincode: %v", err))
@@ -200,8 +215,11 @@ This section delves into the process of writing data onto the Kalp blockchain, e
 
 This function allows writing data to the ledger with KYC verification, ensuring only KYC-verified users can make ledger modifications.
 
+<<<<<<< HEAD
 Copy
 
+=======
+>>>>>>> main
 ```go linenums="1"
 err := ctx.PutStateWithKyc("myKey", []byte("myValue"))
 if err != nil {
@@ -249,7 +267,11 @@ The `PutStateWithoutKyc` function within the Kalp SDK offers an alternative appr
         
     
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ```go linenums="1"
 err := ctx.PutStateWithoutKyc("myKey", []byte("myValue"))
@@ -295,7 +317,11 @@ The `GetState` function within the Kalp SDK empowers you to retrieve data stored
 -   **Key-Value Lookup:** It operates like a traditional key-value store, where each key maps to a corresponding value.
     
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ```go linenums="1"
 value, err := ctx.GetState("myKey")
@@ -350,7 +376,11 @@ This functionality safeguards the integrity of the ledger by ensuring only autho
 -   **KYC Enforcement:** It mandates successful KYC verification as a prerequisite for data deletion. This verification process ensures that the user attempting to delete data is authorized to do so, adhering to security best practices and potentially complying with regulatory requirements.
     
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ```go linenums="1"
 err := ctx.DelStateWithKyc("myKey")
@@ -393,7 +423,11 @@ The `DelStateWithoutKyc` function within the Kalp SDK offers a way to remove dat
         
     
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ```go linenums="1"
 err := ctx.DelStateWithoutKyc("myKey")
@@ -428,7 +462,11 @@ The `GetKYC` function within the Kalp SDK empowers you to **verify a user's KYC 
 
 **KYC Verification Check:** This function queries the network to determine if a particular user identified by their user ID (`userId`) has successfully completed the KYC verification process.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ```go linenums="1"
 Kyced, err := ctx.GetKYC("userId")

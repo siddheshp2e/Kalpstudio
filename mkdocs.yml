@@ -1,16 +1,23 @@
 site_name: Kalp Studio Documentation
+<<<<<<< HEAD
 site_author: Siddhesh Patankar & Gaurav Tiwari
 repo_name: Kalp studio knowledge layer
 copyright: Copyright 2024 Kalp studio. All rights reserved.
 repo_url: https://github.com/siddheshp2e/Technical_Documentation
 site_url: http:// 127.0.0.1:8000
 
+=======
+site_author: Siddhesh Patankar
+copyright: Copyright © 2024 Kalp studio. All rights reserved.
+repo_url: https://github.com/siddheshp2e/Kalpstudio
+site_url: https://siddheshp2e.github.io/Kalpstudio/
+>>>>>>> main
 
 
 
 theme:
   font: 
-    code: Poppins
+    code: Open Sans
   name: material
   logo: images/PNG.png
     #- link: Introduction/Welcome.md
@@ -36,9 +43,12 @@ theme:
     - navigation.instant.progress
     # - navigation.prune
     - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.tabs.sticky
     - navigation.leftside
     - navigation.tracking
+    - navigation.instant.progress
+    - navigation.top
+    - navigation.tabs
     - search.highlight
     - search.share
     - search.suggest
@@ -125,8 +135,16 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+<<<<<<< HEAD
 
 nav:
+=======
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+>>>>>>> main
   - Introduction: 'Introduction/Welcome.md'
   - Getting started:
       - User onboarding:
@@ -167,10 +185,15 @@ nav:
   - Release notes:
       - Release version 1.0.0:
           - Release notes version 1.0.0: 'Release notes/Release version 1.0.0/Release notes version 1.0.0.md'
+<<<<<<< HEAD
       - Release version 1.0.1:  
           - Release notes version 1.0.1: 'Release notes/Release Version 1.0.1/Release notes version 1.0.1.md'
 
 
+=======
+      - Release version 1.1.0:  
+          - Release notes version 1.1.0: 'Release notes/Release Version 1.1.0/Release notes version 1.1.0.md'
+>>>>>>> main
 
 extra:
   social:

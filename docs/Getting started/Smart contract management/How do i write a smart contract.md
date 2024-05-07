@@ -55,10 +55,13 @@ Creating and Starting Chaincode
     1.  Execute the following command to create a new directory named `my-smart-contract`
         
     2.  Change the directory into the newly created project directory.
+<<<<<<< HEAD
         
     
 
 Copy
+=======
+>>>>>>> main
 
 ```go linenums="1"
 $ mkdir my-smart-contract
@@ -66,18 +69,24 @@ $ cd my-smart-contract
 ```
 
 1.  Initialize a new Go module: Within the `my-smart-contract` directory, run the following command to initialize a new Go module named `my-smart-contract`:
+<<<<<<< HEAD
     
 
 Copy
+=======
+>>>>>>> main
 
 ```go linenums="1"
 $ go mod init my-smart-contract
 ```
 
 1.  Getting Started with Kalp-SDK: Use the `go get` command to download and install the Kalp SDK library:
+<<<<<<< HEAD
     
 
 Copy
+=======
+>>>>>>> main
 
 ```go linenums="1"
 $ go get -u github.com/p2eengineering/kalp-sdk-public/kalp
@@ -85,8 +94,11 @@ $ go get -u github.com/p2eengineering/kalp-sdk-public/kalp
 
 **Response:**
 
+<<<<<<< HEAD
 Copy
 
+=======
+>>>>>>> main
 ```go linenums="1"
 go: downloading golang.org/x/exp v0.0.0-20240222234643-814bf88cf225
 go: downloading golang.org/x/sys v0.17.0
@@ -133,9 +145,12 @@ go: added gopkg.in/yaml.v3 v3.0.1
 ```
 
 1.  Create a new Go source file`.go` within your project directory. This file will house the core logic of your smart contract. Utilize your preferred text editor or IDE to create the file and ensure it's saved with the `.go` extension.
+<<<<<<< HEAD
     
 
 Copy
+=======
+>>>>>>> main
 
 ```go linenums="1"
 package main
@@ -178,9 +193,12 @@ This newly created file will encompass the following core elements:
     
 
 1.  Create `main.go` file in the following way.
+<<<<<<< HEAD
     
 
 Copy
+=======
+>>>>>>> main
 
 ```go linenums="1"
 package main
@@ -246,18 +264,24 @@ The `main.go` file stands as the conductor that orchestrates the initialization 
     Pass your contract_ `_struct_` _as an argument to the_ `_NewChaincode_` _function and specify whether the contract is payable or not._
 
 1.  **Vendoring the dependencies:** This places the external dependencies for your smart contract into a local `vendor` directory.
+<<<<<<< HEAD
     
 
 Copy
+=======
+>>>>>>> main
 
 ```go linenums="1"
 $ go mod vendor
 ```
 
 1.  **Folder Structure**: After Executing the above command the folder Structure shows up as below:
+<<<<<<< HEAD
     
 
 Copy
+=======
+>>>>>>> main
 
 ```go linenums="1"
 Folder name
@@ -277,9 +301,12 @@ Folder name
 **Implementation Steps with Kalp SDK**
 
 1.  **Define a New Go Struct:** Represent your contract with a new Go struct and embed the `kalpsdk.Contract` struct to inherit base contract functionalities.
+<<<<<<< HEAD
     
 
 Copy
+=======
+>>>>>>> main
 
 ```go linenums="1"
 type MyContract struct {
@@ -288,9 +315,12 @@ kalpsdk.Contract
 ```
 
 1.  **Implement the Contract Interface:** Define the `Init` and `Invoke` methods for initialization logic and invocation handling.
+<<<<<<< HEAD
     
 
 Copy
+=======
+>>>>>>> main
 
 ```go linenums="1"
 func (c *MyContract) Init(ctx kalpsdk.TransactionContextInterface) error {
@@ -341,8 +371,11 @@ Writing to the Blockchain
 
 **PutStateWithKyc**
 
+<<<<<<< HEAD
 Copy
 
+=======
+>>>>>>> main
 ```go linenums="1"
 err := ctx.PutStateWithKyc("myKey", []byte("myValue")) if err != nil {
  // Handle error 
@@ -355,7 +388,10 @@ err := ctx.PutStateWithKyc("myKey", []byte("myValue")) if err != nil {
 
 **PutStateWithoutKyc**
 
+<<<<<<< HEAD
 Copy
+=======
+>>>>>>> main
 
 ```go linenums="1"
 err := ctx.PutStateWithoutKyc("myKey", []byte("myValue"))

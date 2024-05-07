@@ -29,7 +29,11 @@ Initialize Function
 
 Within the Kalp NFT contract, the `Initialize` method serves as a meticulous architect, establishing the foundational configurations that shape the contract's identity and functionality. It acts as a crucial starting point, ensuring essential parameters are set before any subsequent interactions can occur.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ```go linenums="1"
 func (s *SmartContract) Initialize(sdk kalpsdk.TransactionContextInterface, name string, symbol string) (bool, error) {
@@ -62,7 +66,11 @@ func (s *SmartContract) Initialize(sdk kalpsdk.TransactionContextInterface, name
 
 The `Mint` method acts as a powerful sculptor, meticulously crafting and issuing NFTs into existence. It serves as the cornerstone for NFT creation, enabling the minting of a designated number of tokens and assigning them to a specified recipient.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ```go linenums="1"
 func (s *SmartContract) Mint(sdk kalpsdk.TransactionContextInterface, account string, id uint64, amount uint64) error {
@@ -87,7 +95,11 @@ func (s *SmartContract) Mint(sdk kalpsdk.TransactionContextInterface, account st
 
 The `MintBatch` method embodies the spirit of efficiency, enabling the creation and allocation of **multiple NFTs** in a single, streamlined operation. It empowers the minting of diverse NFT types, each with its unique identifier and quantity, fostering a more efficient workflow for creators and distributors.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ```go linenums="1"
 func (s *SmartContract) MintBatch(sdk kalpsdk.TransactionContextInterface, account string, ids []uint64, amounts []uint64) error {
@@ -110,7 +122,11 @@ func (s *SmartContract) MintBatch(sdk kalpsdk.TransactionContextInterface, accou
 
 The `Burn` method serves as a transformative force, deliberately removing NFTs from existence and reducing their overall supply. It acts as a counterbalance to minting, fostering scarcity and potentially enhancing the value of remaining tokens.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ```go linenums="1"
 func (s *SmartContract) Burn(sdk kalpsdk.TransactionContextInterface, account string, id uint64, amount uint64) error {
@@ -133,7 +149,11 @@ func (s *SmartContract) Burn(sdk kalpsdk.TransactionContextInterface, account st
 
 The `BurnBatch` method embodies efficiency and precision, enabling the coordinated removal and destruction of **multiple NFT types** within a single, streamlined transaction. It serves as an optimized approach to managing NFT supply and unlocking various functionalities within the Kalp ecosystem.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ```go linenums="1"
 func (s *SmartContract) BurnBatch(sdk kalpsdk.TransactionContextInterface, account string, ids []uint64, amounts []uint64) error {
@@ -156,7 +176,11 @@ func (s *SmartContract) BurnBatch(sdk kalpsdk.TransactionContextInterface, accou
 
 The `TransferFrom` method acts as a facilitator, enabling the seamless **transfer of ownership** for designated NFTs from one account to another. It empowers vibrant secondary markets and fosters dynamic ownership experiences within the Kalp ecosystem.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ```go linenums="1"
 func (s *SmartContract) TransferFrom(sdk kalpsdk.TransactionContextInterface, sender string, recipient string, id uint64, amount uint64) error {
@@ -181,7 +205,11 @@ func (s *SmartContract) TransferFrom(sdk kalpsdk.TransactionContextInterface, se
 
 The `BatchTransferFrom` method embodies efficiency and coordination, enabling the **seamless transfer of ownership for diverse NFT types** within a single, streamlined transaction. It fosters efficient exchange processes, minimizing transaction costs and enhancing user experience.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ```go linenums="1"
 func (s *SmartContract) BatchTransferFrom(sdk kalpsdk.TransactionContextInterface, sender string, recipient string, ids []uint64, amounts []uint64) error {
@@ -206,7 +234,11 @@ func (s *SmartContract) BatchTransferFrom(sdk kalpsdk.TransactionContextInterfac
 
 The `SetApprovalForAll` method acts as a delegation tool, enabling **granular control over NFT management permissions**. It empowers users to grant or revoke the ability for a designated operator (often another smart contract) to transfer all their NFTs on their behalf.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ```go linenums="1"
 func (s *SmartContract) SetApprovalForAll(sdk kalpsdk.TransactionContextInterface, operator string, approved bool) error {
@@ -232,7 +264,11 @@ func (s *SmartContract) SetApprovalForAll(sdk kalpsdk.TransactionContextInterfac
 
 the `IsApprovedForAll` method acts as a transparency tool, enabling users and other smart contracts to **verify the authorization status of a designated operator**. It empowers informed decision-making and fosters trust within the Kalp ecosystem.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ```go linenums="1"
 func (s *SmartContract) IsApprovedForAll(sdk kalpsdk.TransactionContextInterface, account string, operator string) (bool, error) {
@@ -253,7 +289,11 @@ func (s *SmartContract) IsApprovedForAll(sdk kalpsdk.TransactionContextInterface
 
 the `BalanceOf` method serves as a meticulous bookkeeper, enabling the **querying of NFT balances associated with a specific account and token type**. It provides a transparent and accessible way to ascertain digital asset ownership within the Kalp ecosystem.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ```go linenums="1"
 func (s *SmartContract) BalanceOf(sdk kalpsdk.TransactionContextInterface, account string, id uint64) (uint64, error) {
@@ -274,7 +314,11 @@ func (s *SmartContract) BalanceOf(sdk kalpsdk.TransactionContextInterface, accou
 
 The `BalanceOfBatch` method embodies optimization, enabling the **efficient querying of NFT balances for multiple accounts and token types** within a single operation. It streamlines data retrieval, minimizing transaction costs and enhancing user experience within the Kalp ecosystem.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ```go linenums="1"
 func (s *SmartContract) BalanceOfBatch(sdk kalpsdk.TransactionContextInterface, accounts []string, ids []uint64) ([]uint64, error) {

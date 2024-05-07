@@ -8,8 +8,11 @@ Smart Contract Verification and Testing
 
 **Step 1:** Verify your smart contract's syntax and functionality by compiling it using the following command:
 
+<<<<<<< HEAD
 Copy
 
+=======
+>>>>>>> main
 ```go linenums="1"
 $ go build .
 ```

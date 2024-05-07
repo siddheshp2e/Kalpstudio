@@ -29,7 +29,11 @@ The `Initialize` method serves as a crucial first step in configuring a **Kalp-b
 
 **Implementation (Go):**
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 func (c *TokenERC721Contract) Initialize(ctx kalpsdk.TransactionContextInterface, name string, symbol string) (bool, error) {
@@ -61,7 +65,11 @@ MintWithTokenURI Function
 
 The `MintWithTokenURI` method holds the power to create brand-new NFTs (Non-Fungible Tokens) within the Kalp ecosystem, cementing their unique existence and linking them with rich metadata. It serves as a cornerstone for establishing ownership and unlocking the diverse possibilities that NFTs offer.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 func (c *TokenERC721Contract) MintWithTokenURI(ctx kalpsdk.TransactionContextInterface, tokenId string, tokenURI string) (*Nft, error) {
@@ -90,7 +98,11 @@ func (c *TokenERC721Contract) MintWithTokenURI(ctx kalpsdk.TransactionContextInt
 
 The `Burn` method wields the definitive power to permanently remove NFTs (Non-Fungible Tokens) from the Kalp ecosystem, executing an irreversible act of destruction that revokes their presence and ownership. It serves as a mechanism for managing token supply, addressing specific use cases, or even symbolizing artistic expression.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 func (c *TokenERC721Contract) Burn(ctx kalpsdk.TransactionContextInterface, tokenId string) (bool, error) {
@@ -115,7 +127,11 @@ func (c *TokenERC721Contract) Burn(ctx kalpsdk.TransactionContextInterface, toke
 
 The `TransferFrom` method sits at the heart of NFT (Non-Fungible Token) movement within the Kalp ecosystem, meticulously orchestrating the transfer of ownership from one entity to another. It stands as the cornerstone for enabling seamless transactions, trading, and sharing of NFTs.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 func (c *TokenERC721Contract) TransferFrom(ctx kalpsdk.TransactionContextInterface, from string, to string, tokenId string) (bool, error) {
@@ -147,7 +163,11 @@ func (c *TokenERC721Contract) TransferFrom(ctx kalpsdk.TransactionContextInterfa
 
 The `Approve` method empowers NFT (Non-Fungible Token) owners within the Kalp ecosystem to selectively bestow transfer authority upon designated accounts, granting them the ability to move specific NFTs on behalf of the owner. This flexibility facilitates a range of collaborative and trust-based interactions.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 func (c *TokenERC721Contract) Approve(ctx kalpsdk.TransactionContextInterface, operator string, tokenId string) (bool, error) {
@@ -177,7 +197,11 @@ func (c *TokenERC721Contract) Approve(ctx kalpsdk.TransactionContextInterface, o
 
 The `SetApprovalForAll` method within the Kalp ecosystem empowers NFT (Non-Fungible Token) owners to confer **blanket approval** to designated accounts (operators). This grants the operator the ability to transfer **all** of the owner's NFTs, acting as a powerful tool for managing large collections or streamlining specific use cases.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 func (c *TokenERC721Contract) SetApprovalForAll(ctx kalpsdk.TransactionContextInterface, operator string, approved bool) (bool, error) {
@@ -207,7 +231,11 @@ func (c *TokenERC721Contract) SetApprovalForAll(ctx kalpsdk.TransactionContextIn
 
 The `BalanceOf` method acts as a digital accountant within the Kalp ecosystem, meticulously cataloging NFT (Non-Fungible Token) collections. It enables you to precisely determine the number of NFTs held by a specific account, serving as a crucial tool for understanding ownership patterns, token scarcity, and personal collections.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 func (c *TokenERC721Contract) BalanceOf(ctx kalpsdk.TransactionContextInterface, owner string) int {
@@ -235,7 +263,11 @@ func (c *TokenERC721Contract) BalanceOf(ctx kalpsdk.TransactionContextInterface,
 
 Within the Kalp NFT landscape, the `OwnerOf` method serves as a steadfast guide, revealing the rightful owner of a specified NFT. It acts as a fundamental tool for establishing ownership, ensuring responsible transfer, and upholding accountability within this dynamic ecosystem.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 func (c *TokenERC721Contract) OwnerOf(ctx kalpsdk.TransactionContextInterface, tokenId string) (string, error) {
@@ -265,7 +297,11 @@ func (c *TokenERC721Contract) OwnerOf(ctx kalpsdk.TransactionContextInterface, t
 
 The `GetApproved` method acts as a trustworthy informant, revealing the account specifically authorized to transfer a designated NFT on behalf of its owner. It serves as a vital tool for understanding transfer permissions and managing collaborative ownership scenarios.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 func (c *TokenERC721Contract) GetApproved(ctx kalpsdk.TransactionContextInterface, tokenId string) (string, error) {
@@ -295,7 +331,11 @@ func (c *TokenERC721Contract) GetApproved(ctx kalpsdk.TransactionContextInterfac
 
 The `IsApprovedForAll` method assumes the role of a meticulous gatekeeper, determining whether a designated account (operator) holds sweeping authority to manage **the entire collection** of NFTs belonging to a specific owner. It acts as a cornerstone for managing extensive collections and facilitating collaborative ownership structures.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 func (c *TokenERC721Contract) IsApprovedForAll(ctx kalpsdk.TransactionContextInterface, owner string, operator string) (bool, error) {
@@ -330,7 +370,11 @@ func (c *TokenERC721Contract) IsApprovedForAll(ctx kalpsdk.TransactionContextInt
 
 the `Name` method fulfills the role of a skillful archivist, divulging the distinct title bestowed upon a token collection. It serves as a fundamental means of identifying and referencing collections, fostering clarity and discoverability.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 func (c *TokenERC721Contract) Name(ctx kalpsdk.TransactionContextInterface) (string, error) {
@@ -355,7 +399,11 @@ func (c *TokenERC721Contract) Name(ctx kalpsdk.TransactionContextInterface) (str
 
 The `Symbol` method acts as a herald, disclosing the succinct and potent symbol that serves as a collection's emblematic signature. It empowers concise identification and efficient referencing, akin to a heraldic crest in the digital realm.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 func (c *TokenERC721Contract) Symbol(ctx kalpsdk.TransactionContextInterface) (string, error) {
@@ -387,7 +435,11 @@ Returns the metadata URI of an NFT.
 
 **Function: TokenURI**
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 func (c *TokenERC721Contract) TokenURI(ctx kalpsdk.TransactionContextInterface, tokenId string) (string, error) {
@@ -407,7 +459,11 @@ func (c *TokenERC721Contract) TokenURI(ctx kalpsdk.TransactionContextInterface, 
 
 the `TokenURI` method plays the role of a trusty navigator, leading explorers to a digital harbor brimming with an NFT's rich metadata. It serves as a fundamental gateway to an NFT's unique traits, captivating imagery, and captivating stories.
 
+<<<<<<< HEAD
 Copy
+=======
+
+>>>>>>> main
 
 ``` js linenums="1"
 func (c *TokenERC721Contract) TotalSupply(ctx kalpsdk.TransactionContextInterface) int {
