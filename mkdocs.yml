@@ -1,9 +1,10 @@
 site_name: Kalp Studio Documentation
-site_author: Siddhesh Patankar
+site_author: Siddhesh Patankar & Gaurav Tiwari
 repo_name: Kalp studio knowledge layer
 copyright: Copyright 2024 Kalp studio. All rights reserved.
 repo_url: https://github.com/siddheshp2e/Technical_Documentation
-site_url: http://127.0.0.1:8000/
+site_url: http:// 127.0.0.1:8000
+
 
 
 
@@ -193,7 +194,3 @@ extra:
       link: https://discord.com/@kalpstudio
 
   generator: false
-
-  nav: 
-    - Introduction:
-      - Welcome.md
