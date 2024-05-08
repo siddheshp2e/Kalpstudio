@@ -1,0 +1,219 @@
+site_name: Kalp Studio Documentation
+<<<<<<< HEAD
+site_author: Siddhesh Patankar & Gaurav Tiwari
+repo_name: Kalp studio knowledge layer
+copyright: Copyright 2024 Kalp studio. All rights reserved.
+repo_url: https://github.com/siddheshp2e/Technical_Documentation
+site_url: http:// 127.0.0.1:8000
+
+=======
+site_author: Siddhesh Patankar
+copyright: Copyright © 2024 Kalp studio. All rights reserved.
+repo_url: https://github.com/siddheshp2e/Kalpstudio
+site_url: https://siddheshp2e.github.io/Kalpstudio/
+>>>>>>> main
+
+
+
+theme:
+  font: 
+    code: Open Sans
+  name: material
+  logo: images/PNG.png
+    #- link: Introduction/Welcome.md
+  favicon: images/PNG.png
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    # - content.footnote.tooltips
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - header.bold
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    - navigation.instant
+    - navigation.instant.progress
+    # - navigation.prune
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.leftside
+    - navigation.tracking
+    - navigation.instant.progress
+    - navigation.top
+    - navigation.tabs
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow  
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: white
+      scheme: default
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: white
+      scheme: default
+      accent: deep orange 
+      toggle:
+        icon: material/eye
+        name: Switch to dark mode
+  
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: black
+      scheme: slate
+      accent: deep orange
+      toggle:
+        icon: material/eye-outline
+        name: Switch to system preference
+  plugins:
+  - multirepo:
+      cleanup: true
+      keep_docs_dir: false
+  - search
+  - open-in-new-tab
+  - git authors
+  icon:
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+      
+
+
+#  markdown_extensions:
+#  - pymdownx.highlight:
+#      anchor_linenums: true
+#      line_spans: __span
+#      pygments_lang_class: true
+#  - pymdownx.inlinehilite
+#  - pymdownx.snippets
+#  - pymdownx.superfences
+#  - pymdownx.highlight
+#  - pymdownx.inlinehilite
+#  - pymdownx.keys
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+<<<<<<< HEAD
+
+nav:
+=======
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+>>>>>>> main
+  - Introduction: 'Introduction/Welcome.md'
+  - Getting started:
+      - User onboarding:
+          - Create an account: 'Getting started/User onboarding/Create an account.md'
+          - KYC Process - International Users: 'Getting started/User onboarding/KYC Process - International Users.md'
+          - KYC Process - Indian Users: 'Getting started/User onboarding/KYC Process - Indian Users.md'
+          - Explore kalp studio: 'Getting started/User onboarding/Explore kalp studio.md'
+      - Project management:
+          - Creating a kalp studio project: 'Getting started/Project management/Creating a kalp studio project.md'
+          - How do view & edit my projects: 'Getting started/Project management/How do view & edit my projects.md'
+      - Smart contract management:
+          - How do i write a smart contract: 'Getting started/Smart contract management/How do i write a smart contract.md'
+          - How do i deploy a smart contract: 'Getting started/Smart contract management/How do i deploy a smart contract.md'
+          - How can i test my smart contract: 'Getting started/Smart contract management/How can i test my smart contract.md'
+          - How can I view the list of my Smart Contracts: 'Getting started/Smart contract management/How can I view the list of my Smart Contracts.md'
+          - How can i check if my smart contract is deployed on kalp blockchain: 'Getting started/Smart contract management/How can i check if my smart contract is deployed on kalp blockchain.md'
+          - What are my smart contract details, Transactions, and API Endpoints: 'Getting started/Smart contract management/What are my smart contract details, Transactions, and API Endpoints.md'
+          - How do i deploy my smart contract: 'Getting started/Smart contract management/How do i deploy my smart contract.md'
+          - How can i perform transactions using API endpoints: 'Getting started/Smart contract management/How can i perform transactions using API endpoints.md'
+      - Kalp Wallet Management:
+          - How can i add funds to my kalp wallet: 'Getting started/Kalp Wallet Management/How can i add funds to my kalp wallet.md'
+          - How can i view fund balance and payment transactions: 'Getting started/Kalp Wallet Management/How can i view fund balance and payment transactions.md'
+      - Settings:
+          - How can i view and edit my profile through settings: 'Getting started/Settings/How can i view and edit my profile through settings.md'
+          - How can I create an API Auth Key: 'Getting started/Settings/How can i create an API Auth key.md'
+  - Dev documentation:
+      - Use the kalp SDK:
+          - Kalp Golang SDK: 'Dev documentation/Use the kalp SDK/Kalp Golang SDK.md'
+      - KRC Token Standard:
+          - KRC 20 Token Contract: 'Dev documentation/KRC Token Standard/KRC 20 Token Contract.md'
+          - KRC 721 Token Contract: 'Dev documentation/KRC Token Standard/KRC 721 Token Contract.md'
+          - KRC 1155 Token Contract: 'Dev documentation/KRC Token Standard/KRC 1155 Token Contract.md'
+      - Smart Contract Write,Test, Deploy & Interact:
+          - Write the smart contract: 'Dev documentation/Smart Contract Write, Test, Deploy & Interact/Write the smart contract.md'
+          - Test the smart contract: 'Dev documentation/Smart Contract Write, Test, Deploy & Interact/Test the smart contract.md'
+          - Deploy the smart contract: 'Dev documentation/Smart Contract Write, Test, Deploy & Interact/Deploy the smart contract.md'
+          - Interacting with smart contract: 'Dev documentation/Smart Contract Write, Test, Deploy & Interact/Interacting with smart contract.md'
+  - Release notes:
+      - Release version 1.0.0:
+          - Release notes version 1.0.0: 'Release notes/Release version 1.0.0/Release notes version 1.0.0.md'
+<<<<<<< HEAD
+      - Release version 1.0.1:  
+          - Release notes version 1.0.1: 'Release notes/Release Version 1.0.1/Release notes version 1.0.1.md'
+
+
+=======
+      - Release version 1.1.0:  
+          - Release notes version 1.1.0: 'Release notes/Release Version 1.1.0/Release notes version 1.1.0.md'
+>>>>>>> main
+
+extra:
+  social:
+
+    - icon: fontawesome/brands/github
+      link: https://github.com
+  
+    - icon: fontawesome/brands/x-twitter 
+      link: https://x.com/kalpstudio
+
+    - icon: fontawesome/brands/facebook 
+      link: https://facebook.com/@kalpstudio
+
+    - icon: fontawesome/brands/instagram 
+      link: https://instagram.com/@kalpstudio
+
+    - icon: fontawesome/brands/linkedin 
+      link: https://linkedin.com/@kalpstudio
+
+    - icon: fontawesome/brands/discord
+      link: https://discord.com/@kalpstudio
+
+  generator: false
