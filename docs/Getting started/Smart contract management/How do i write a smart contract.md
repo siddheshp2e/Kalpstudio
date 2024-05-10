@@ -1,23 +1,12 @@
-
 # How do I write a Smart Contract?
-
-  
 
 This documentation provides an in-depth guide on the steps to follow in writing Smart Contracts tailored for developers aiming to interact with the Kalp blockchain network.
 
-  
-
 ## Overview
 
-  
+We require Kalp-SDK to a comprehensive Golang package that simplifies the development of smart contracts on the Kalp blockchain network. It is specifically designed to enable developers to write and create Aa Kalp-blockchain-compliant smart contracts with a set of powerful functionalities. 
 
-We require Kalp-SDK to a comprehensive Golang package that simplifies the development of smart contracts on the Kalp blockchain network. It is specifically designed to enable developers to write and create Aa Kalp-blockchain-compliant smart contracts with a set of powerful functionalities.
-
-  
-
-### Prerequisites
-
-  
+### Prerequisites 
 
 -  **Golang installation and setup**
 
@@ -37,11 +26,7 @@ Possess a basic understanding of blockchain networks, including concepts like di
 
 Prior experience and proficiency in the Go programming language are essential prerequisites for contributing to Kalp development. This includes understanding core Go syntax, data structures, control flow statements, and error-handling mechanisms.
 
-  
-
-### Set up your Development Environment_
-
-  
+## Set up your Development Environment
 
 - Download and install the appropriate Golang binary for your operating system from the official Golang download page: [https://go.dev/doc/install](https://go.dev/doc/install). Follow the provided installation instructions to ensure proper integration with your system.
 
@@ -51,19 +36,13 @@ Prior experience and proficiency in the Go programming language are essential pr
 
 -  **PATH Update:** Add the `$GOPATH/bin` directory to your system's `PATH` environment variable. This allows you to execute Go commands (like `go build`, `go run`) from any terminal location without specifying the full path.
 
-  
-
 ## Creating and Starting Chaincode
-
-  
 
 1. Create a new directory for your project.
 
 1. Execute the following command to create a new directory named `my-smart-contract`
 
 2. Change the directory into the newly created project directory.
-
-  
 
 ``` go
 
@@ -72,22 +51,17 @@ $ mkdir my-smart-contract
 $ cd my-smart-contract
 
 ```
-
   
 
 1. Initialize a new Go module: Within the `my-smart-contract` directory, run the following command to initialize a new Go module named `my-smart-contract`:
-
-  
 
 ``` go
 
 $ go mod init my-smart-contract
 
-```
-
-  
 
 1. Getting Started with Kalp-SDK: Use the `go get` command to download and install the Kalp SDK library:
+
 
 ``` go
 
@@ -187,21 +161,11 @@ go: added gopkg.in/yaml.v3 v3.0.1
 
 ```
 
-  
-
 1. Create a new Go source file`.go` within your project directory. This file will house the core logic of your smart contract. Utilize your preferred text editor or IDE to create the file and ensure it's saved with the `.go` extension.
-
-  
-
-
-
-  
 
 ``` go
 
 package main
-
-  
 
 import (
 
@@ -211,15 +175,9 @@ import (
 
 )
 
-  
-
 type SmartContract struct {
-
 kalpsdk.Contract
-
-}
-
-  
+} 
 
 func (sc *SmartContract) ExecuteTransaction() {
 
@@ -227,9 +185,7 @@ func (sc *SmartContract) ExecuteTransaction() {
 
 fmt.Println("Executing transaction...")
 
-}
-
-  
+}  
 
 func (c *SmartContract) Init(ctx kalpsdk.TransactionContextInterface) error {
 
@@ -239,11 +195,7 @@ func (c *SmartContract) Init(ctx kalpsdk.TransactionContextInterface) error {
 
 ```
 
-  
-
 This newly created file will encompass the following core elements:
-
-  
 
 -  **Package Declaration:**  `package main`: This line specifies that the code within this file belongs to the `main` package, which is the entry point for your smart contract application.
 
@@ -259,45 +211,26 @@ This newly created file will encompass the following core elements:
 
 -  **Initialization Function:**  `func (c *SmartContract) Init(ctx kalpsdk.TransactionContextInterface) error { ... }`: This function, named `Init`, serves as the initialization entry point for your smart contract. It typically defines any setup tasks or initialization logic required for your smart contract to function correctly. It takes a `kalpsdk.TransactionContextInterface` argument, providing access to contextual information about the ongoing transaction.
 
-  
-
 1. Create `main.go` file in the following way.
-
-  
 
 ``` go
 
 package main
-
-  
-
 import (
 
 "log"
-
-  
-
 "github.com/p2eengineering/kalp-sdk/kalpsdk"
-
 )
-
-  
 
 func main() {
 
-  
-
 contract := kalpsdk.Contract{IsPayableContract: true}
-
-  
 
 contract.Logger = kalpsdk.NewLogger()
 
 chaincode, err := kalpsdk.NewChaincode(&SmartContract{contract})
 
 contract.Logger.Info("My KAPL SDK sm4")
-
-  
 
 // Create a new instance of your KalpContractChaincode with your smart contract
 
@@ -311,8 +244,6 @@ log.Panicf("Error creating KalpContractChaincode: %v", err)
 
 }
 
-  
-
 // Start the chaincode
 
 if err := chaincode.Start(); err != nil {
@@ -323,11 +254,7 @@ log.Panicf("Error starting chaincode: %v", err)
 
 ```
 
-  
-
 The `main.go` file stands as the conductor that orchestrates the initialization and execution of your smart contract within the Kalp blockchain environment. It serves as the entry point for your application, bringing your carefully crafted smart contract logic to life. Here's a detailed explanation of its structure:
-
-  
 
 -  **Necessary Imports:**
 
@@ -353,19 +280,11 @@ The `main.go` file stands as the conductor that orchestrates the initialization 
 
 -  **Chaincode Activation:**`**if err := chaincode.Start(); err != nil { ... }**`**:** This block calls the `Start()` function on the instantiated chaincode, triggering the execution of your smart contract within the Kalp blockchain environment. Once again, error handling is incorporated to gracefully address any issues that might impede chaincode startup.
 
-  
-
 _**Note:**_
-
-  
 
 _**Payment Tracking for Payable Contracts:**_  _Pass your contract_  `_struct_`  _as an argument to the_  `_NewChaincode_`  _function and specify whether the contract is payable or not._
 
-  
-
 1.  **Vendoring the dependencies:** This places the external dependencies for your smart contract into a local `vendor` directory.
-
-  
 
 ``` go
 
@@ -373,15 +292,7 @@ $ go mod vendor
 
 ```
 
-  
-
 1.  **Folder Structure**: After Executing the above command the folder Structure shows up as below:
-
-  
-
-
-
-  
 
 ``` go
 
@@ -401,19 +312,11 @@ Folder name
 
 ```
 
-  
+1. Save your changes.  
 
-1. Save your changes.
-
-  
-
-## Implementation Steps with Kalp SDK
-
-  
+## Implementation Steps with Kalp SDK 
 
 1.  **Define a New Go Struct:** Represent your contract with a new Go struct and embed the `kalpsdk.Contract` struct to inherit base contract functionalities.
-
-  
 
 ``` go
 
@@ -423,12 +326,11 @@ kalpsdk.Contract
 
 }
 
-```
+``` go
 
-  
+2. **Implement the Contract Interface:** Define the `Init` and `Invoke` methods for initialization logic and invocation handling.
 
-1.  **Implement the Contract Interface:** Define the `Init` and `Invoke` methods for initialization logic and invocation handling.
-```
+``` go
 
 func (c *MyContract) Init(ctx kalpsdk.TransactionContextInterface) error {
 
@@ -442,63 +344,39 @@ func (c *MyContract) Invoke(ctx kalpsdk.TransactionContextInterface, data string
 
 }
 
-  
-
 ```
-
-  
 
 ----------
 
-  
-
-#### 3. Blockchain Data Management
-
-  
+3. Blockchain Data Management
 
 This section details the core functionalities available for managing data on the blockchain:
 
-  
-
 **Writing to the Blockchain:**
-
-  
 
 -  `**PutStateWithKyc**`**:** This function facilitates writing data onto the blockchain ledger. Crucially, it enforces mandatory KYC (Know Your Customer) verification as part of the write operation, ensuring compliance with regulatory requirements or specific platform policies.
 
 -  `**PutStateWithoutKyc**`**:** This function enables writing data to the blockchain ledger. Unlike its counterpart, it bypasses the KYC verification step, potentially catering to situations where regulatory constraints are not applicable or KYC checks have already been performed at an earlier stage.
 
-  
-
 **Reading from the Blockchain:**
 
 -  `**GetState**`**:** This function retrieves the data from the blockchain ledger. It allows querying the current state of the ledger to obtain information relevant to your application's needs.
 
-  
-
 **Deleting from the Blockchain:**
-
-  
 
 -  `**DelStateWithKyc**`**:** This function enables deleting data from the blockchain ledger. Similar to `PutStateWithKyc`, it enforces mandatory KYC verification before proceeding with the deletion operation.
 
 -  `**DelStateWithoutKyc**`**:** This function allows the deleting data from the blockchain ledger. Just as with `PutStateWithoutKyc`, it bypasses the KYC verification step, potentially catering to specific scenarios where deletion is permitted without additional verification.
 
-  
 
-## Sample Code Examples
-
-  
+## Sample code example
 
 ### Writing to the Blockchain
 
-  
-
 ### **PutStateWithKyc**
-
   
 
-```
+``` go
 
 err := ctx.PutStateWithKyc("myKey", []byte("myValue")) if err != nil {
 
@@ -512,11 +390,7 @@ err := ctx.PutStateWithKyc("myKey", []byte("myValue")) if err != nil {
 
 ```
 
-  
-
 ### **PutStateWithoutKyc**
-
-  
  
 ``` go
 
@@ -533,6 +407,5 @@ if err != nil {
 }
 
 ```
-
   
-_For more information, visit:_ [Kalp Golang SDK](https://docs.kalp.studio/ks/welcome-to-kalp-studio-docs/dev-documentation/use-the-kalp-sdk/kalp-golang-sdk)
+For more information, visit: Kalp Golang SDK Documentation

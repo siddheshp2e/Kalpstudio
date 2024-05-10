@@ -1,14 +1,10 @@
 # Write the Smart Contract
 
-## 
-
-Overview
+## Overview
 
 We require Kalp SDK to a comprehensive Golang package that simplifies the development of smart contracts on the Kalp blockchain network. It is specifically designed to enable developers to write and create Aa Kalp-blockchain-compliant smart contracts with a set of powerful functionalities.
 
-### 
-
-Prerequisites
+### Prerequisites
 
 -   **Golang installation and setup**
     
@@ -30,9 +26,7 @@ Prerequisites
     Prior experience and proficiency in the Go programming language are essential prerequisites for contributing to Kalp development. This includes understanding core Go syntax, data structures, control flow statements, and error-handling mechanisms.
     
 
-## 
-
-Set up your Development Environment
+## Set up your Development Environment
 
 -   Download and install the appropriate Golang binary for your operating system from the official Golang download page:  [**https://go.dev/doc/install**](https://go.dev/doc/install). Follow the provided installation instructions to ensure proper integration with your system.
     
@@ -44,9 +38,7 @@ Set up your Development Environment
         
     
 
-## 
-
-Creating and Starting Chaincode
+## Creating and Starting Chaincode
 
 1.  Create a new directory for your project.
     
@@ -58,34 +50,28 @@ Creating and Starting Chaincode
 
 
 
-```go linenums="1"
+``` go 
 $ mkdir my-smart-contract
 $ cd my-smart-contract
 ```
 
 1.  Initialize a new Go module: Within the `my-smart-contract` directory, run the following command to initialize a new Go module named `my-smart-contract`:
-    
 
 
-
-```go linenums="1"
+``` go 
 $ go mod init my-smart-contract
 ```
-
 1.  Getting Started with Kalp-SDK: Use the `go get` command to download and install the Kalp SDK library:
-    
 
 
-
-```go linenums="1"
+``` go 
 $ go get -u github.com/p2eengineering/kalp-sdk-public/kalp
 ```
 
 **Response:**
 
 
-
-```go linenums="1"
+``` go 
 go: downloading golang.org/x/exp v0.0.0-20240222234643-814bf88cf225
 go: downloading golang.org/x/sys v0.17.0
 go: downloading google.golang.org/grpc v1.62.0
@@ -131,11 +117,9 @@ go: added gopkg.in/yaml.v3 v3.0.1
 ```
 
 1.  Create a new Go source file`.go` within your project directory. This file will house the core logic of your smart contract. Utilize your preferred text editor or IDE to create the file and ensure it's saved with the `.go` extension.
-    
 
 
-
-```go linenums="1"
+``` go
 package main
 
 import (
@@ -176,11 +160,8 @@ This newly created file will encompass the following core elements:
     
 
 1.  Create `main.go` file in the following way.
-    
 
-
-
-```go linenums="1"
+``` go
 package main
 
 import (
@@ -244,19 +225,14 @@ The `main.go` file stands as the conductor that orchestrates the initialization 
     Pass your contract_ `_struct_` _as an argument to the_ `_NewChaincode_` _function and specify whether the contract is payable or not. 
     **This places the external dependencies** for your smart contract into a local `vendor` directory.
 
-
-
-
-```go linenums="1"
+``` go 
 $ go mod vendor
 ```
 
 1.  **Folder Structure**: After Executing the above command the folder Structure shows up as below:
-    
 
 
-
-```go linenums="1"
+``` go 
 Folder name
 ├──vendor
 ├──go.mod
@@ -269,13 +245,9 @@ Folder name
 1.  Save your changes.
     
 
-## 
-
-**Implementation Steps with Kalp SDK**
+## **Implementation Steps with Kalp SDK**
 
 1.  **Define a New Go Struct:** Represent your contract with a new Go struct and embed the `kalpsdk.Contract` struct to inherit base contract functionalities.
-    
-
 
 
 ```go linenums="1"
@@ -285,11 +257,8 @@ kalpsdk.Contract
 ```
 
 1.  **Implement the Contract Interface:** Define the `Init` and `Invoke` methods for initialization logic and invocation handling.
-    
 
-
-
-```go linenums="1"
+``` go 
 func (c *MyContract) Init(ctx kalpsdk.TransactionContextInterface) error {
 // Initialization logic return nil
 }
@@ -301,9 +270,7 @@ func (c *MyContract) Invoke(ctx kalpsdk.TransactionContextInterface, data string
 
 ----------
 
-#### 
-
-3. Blockchain Data Management
+#### Blockchain Data Management
 
 This section details the core functionalities available for managing data on the blockchain:
 
@@ -326,21 +293,13 @@ This section details the core functionalities available for managing data on the
 -   `**DelStateWithoutKyc**`**:** This function allows the deleting data from the blockchain ledger. Just as with `PutStateWithoutKyc`, it bypasses the KYC verification step, potentially catering to specific scenarios where deletion is permitted without additional verification.
     
 
-## 
+## Sample Code Examples
 
-Sample Code Examples
+### Writing to the Blockchain
 
-### 
+### **PutStateWithKyc**
 
-Writing to the Blockchain
-
-### 
-
-**PutStateWithKyc**
-
-
-
-```go linenums="1"
+``` go 
 err := ctx.PutStateWithKyc("myKey", []byte("myValue")) 
 if err != nil {
   // Handle error 
@@ -349,13 +308,9 @@ if err != nil {
  }
 ```
 
-### 
+### **PutStateWithoutKyc**
 
-**PutStateWithoutKyc**
-
-
-
-```go linenums="1"
+``` go 
 err := ctx.PutStateWithoutKyc("myKey", []byte("myValue"))
 if err != nil {
     // Handle error

@@ -3,8 +3,7 @@ site_author: Siddhesh Patankar
 copyright: Copyright © 2024 Kalp studio. All rights reserved.
 repo_url: https://github.com/siddheshp2e/Kalpstudio
 site_url: https://siddheshp2e.github.io/Kalpstudio/
-
-
+repo_name: Kalp studio documentation
 
 theme:
   font: 
@@ -61,7 +60,6 @@ theme:
       toggle:
         icon: material/eye
         name: Switch to dark mode
-  
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
@@ -92,8 +90,6 @@ theme:
       bug: fontawesome/solid/robot
       example: fontawesome/solid/flask
       quote: fontawesome/solid/quote-left
-      
-
 
 #  markdown_extensions:
 #  - pymdownx.highlight:
@@ -172,7 +168,9 @@ nav:
       - Release version 1.0.0:
           - Release notes version 1.0.0: 'Release notes/Release version 1.0.0/Release notes version 1.0.0.md'
       - Release version 1.1.0:  
-          - Release notes version 1.1.0: 'Release notes/Release Version 1.1.0/Release notes version 1.1.0.md'
+          - Release notes version 1.1.0: 'Release notes/Release version 1.1.0/Release notes version 1.1.0.md'
+      - Release version 1.1.1:
+          - Release notes version 1.1.1: 'Release notes/Release version 1.1.1/Release notes version 1.1.1.md'
 
 extra:
   social:

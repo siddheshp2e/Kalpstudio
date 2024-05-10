@@ -1,15 +1,18 @@
-#
-# Kalp Studio Version 1.0.0
+# Kalp Studio Release Notes - Version 1.0
 
-### Kalp Studio Release Notes - Version 1.0.0
+## Introduction
+
+This update marks the official launch of Kalp Studio (Version 1.0)! We've introduced a suite of features to streamline the user experience.
+
+### Release Summary
 
 **Product Name**
 
 Kalp Studio
 
-**Release Version**
+**Release version**
 
-V 1.0.0
+v1.0.0
 
 **Build Number**
 
@@ -19,15 +22,8 @@ V 1.0.0
 
 April 03, 2024
 
-This update marks the official launch of Kalp Studio (Version 1.0)! We've introduced a suite of features to streamline the user experience.
 
-Check out the comprehensive introduction below to unlock the Kalp Studio platform's full potential.
-
-[ℹ️Introduction](https://docs.kalp.studio/ks/welcome-to-kalp-studio-docs/introduction)
-
-### 
-
-**Release Features**
+###  **Release Features**
 
 -   **User Management:**
     
@@ -45,8 +41,6 @@ Check out the comprehensive introduction below to unlock the Kalp Studio platfor
         -   **KYC** - KYC process for user verification.
             
         -   **KALP** **ID** - Secure and unique KALP IDs for each user with an integrated wallet for both the testnet and mainnet.
-            
-        
     
 -   **Kalp Wallet (Testnet):**
     
@@ -54,8 +48,7 @@ Check out the comprehensive introduction below to unlock the Kalp Studio platfor
         
     -   **Free Testnet Credits:** 100 free credits are provided for testnet exploration.
         
-    -   **Payment Integration:** Functionality for adding funds to wallets through the payment engine (details forthcoming).
-        
+    -   **Payment Integration:** Functionality for adding funds to wallets through the payment engine (details forthcoming).    
     
 -   **Project and Smart Contract Management:**
     
@@ -68,17 +61,14 @@ Check out the comprehensive introduction below to unlock the Kalp Studio platfor
     -   **Transaction Monitoring:** Monitor transactions associated with deployed smart contracts.
         
     -   **Pre-built Templates:** Pre-built smart contract templates for common standards (ERC-721, ERC-1155, ERC-20).
-        
     
 -   **Transaction Monitoring:** Keep track of your transactions for complete transparency.
     
 -   **API Access & Security**
     
     -   **API Key Generation:** Functionality to generate API authentication keys to interact with deployed contracts.
-        
-    
 
-## Support and Feedback
+### Support and Feedback
 
 Get the most out of Kalp Studio with our library of informative **Support Articles and** [**FAQs**](https://care.kalp.studio/support/solutions/1060000097708). They'll guide you through every step, from onboarding to advanced functionalities, ensuring a smooth and successful development experience.
 

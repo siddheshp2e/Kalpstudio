@@ -1,12 +1,10 @@
 # Test the Smart Contract
 
-### 
-
-Smart Contract Verification and Testing
+### Smart Contract Verification and Testing
 
 **Step 1:** Verify your smart contract's syntax and functionality by compiling it using the following command:
 
-```go linenums="1"
+``` go
 $ go build .
 ```
 

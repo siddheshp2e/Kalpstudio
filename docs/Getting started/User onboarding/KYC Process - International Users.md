@@ -1,141 +1,68 @@
 # KYC Process - International Users
 
-  
-
 Hi Users! Welcome to the Kalp Studio platform.
 
-  
+To ensure the security of your identity on Kalp Studio, we have implemented a KYC (or Know Your Customer) authentication and verification process that enables you to deploy your smart contracts on Kalp Blockchain in a few simple steps. 
 
-To ensure the security of your identity on Kalp Studio, we have implemented a KYC (or Know Your Customer) authentication and verification process that enables you to deploy your smart contracts on Kalp Blockchain in a few simple steps.
+Let’s check out how it's done. 
 
-  
-
-Let’s check out how it's done.
-
-  
-
-### KYC: International Users
-
-  
+### KYC: International Users 
 
 Let us now go through the KYC process for International users.
 
-  
-
 **Step 1:**
 
-  
-
 Login to the Kalp Studio application. For new users, Complete KYC is displayed as you log in. Click on the **Complete KYC** button.
-
   
 
-![Figure 1: Complete KYC](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006994858%2Foriginal%2FdCdHAH_OGGB5jCIfeD_Y6w71eQGxBSInIg.png%3F1708436479&width=768&dpr=4&quality=100&sign=565931bbfecd5d7a88de6f6a93edc7ba143d4222234bf1a6bde1c5dc79eb4a10)
-
-  
-
-
-
-  
+![Figure 1: Complete KYC](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006994858%2Foriginal%2FdCdHAH_OGGB5jCIfeD_Y6w71eQGxBSInIg.png%3F1708436479&width=768&dpr=4&quality=100&sign=565931bbfecd5d7a88de6f6a93edc7ba143d4222234bf1a6bde1c5dc79eb4a10) 
 
 **Step 2:**
 
-  
-
 Select your **Country** to initiate the KYC Process. Click on **Initiate Process**.
-
-  
 
 ![Figure 2: Initiate Process](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006994925%2Foriginal%2FGu3eKWNtfkfKBHRXHMCXL7IYhxObQ9W7Ig.png%3F1708436556&width=768&dpr=4&quality=100&sign=b05ced57011bb203cccd902d6abd129b1da4c20cb372fe378efe386ca2174e68)
 
   
-
-
-
-  
-
-The verification process varies based on country selection.
-
-  
+The verification process varies based on country selection. 
 
 ![Figure 3: Select Country](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006995006%2Foriginal%2FyoRI_pQedtJjJlus6QDXDB1F3SuYqr-7Lg.png%3F1708436618&width=768&dpr=4&quality=100&sign=a9751058d5f5ed9326585e9e9d10e55f13479d062de26f945fc2837c8a09281c)
 
-  
-
-
-
-  
-
 **Step 3:**
-
-  
 
 Select your **Issuing Country**.
 
-  
-
 ![Figure 4: Issuing Country](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006995063%2Foriginal%2FFwV5n3xpbEHjtmEqyHHrn7T37npqSNAvGw.png%3F1708436671&width=768&dpr=4&quality=100&sign=69f9a53b93810627697cfaa4cb7da60320b88d616a43198ca64012298fdfde7e)
 
-  
-
-
-
-  
 
 **Step 4:**
 
-  
-
 Select your preferred mode of verification types. These can be Identity cards, Passports, Driver's License, and Residence Permits.
-
-  
 
 ![Figure 5: Document Types](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006995091%2Foriginal%2Fzmbgu_Ps6uu2UamVf8L-8RaylwB0NpKabw.png%3F1708436731&width=768&dpr=4&quality=100&sign=326d3db7534b92a07de22f43c853753846567fe997127524d3a58cbeee18f076)
 
   
-## KYC via Mobile Phone**
-
-  
+## KYC via Mobile Phone
 
 **Step 5:**
 
-  
-
 A message will be displayed “Web portal wants to use your camera”. This process involves a web camera and the use of a mobile phone. We will first show the KYC through Mobile phone followed by the web process.
-
   
 
 Continue further verification on the phone screen.
 
-  
-
 ![Figure 6: Continue Verification on mobile phone](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006995127%2Foriginal%2F5oNvLQZyD4dL9_9hNhdGufOAWFy9KgcJmQ.png%3F1708436783&width=768&dpr=4&quality=100&sign=6c2689eb99bc6ea21e20ad4a3b52b4073850b68b3526b2862430e31337f4301d)
-
   
 
-You can copy the link to your mobile phone or scan the QR code.
-
-  
+You can copy the link to your mobile phone or scan the QR code. 
 
 ![Figure 7: Continue Verification on mobile phone](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006789061%2Foriginal%2FE3odekBbg9N1lfEJxNe9-8YsE3fLBcl4dg.png%3F1707904364&width=768&dpr=4&quality=100&sign=1765eb1ba4590e5d71a82c3985ebefe6ce60a01c3cf2d5071b3f5cfeb0e31bb2)
 
-  
-
-
-
-  
-
 **Step 6:**
-
-  
 
 Click Selfie. To do this click on **I'm Ready**.
 
-  
-
 >  _**Note:**_  _Ensure your face is within the frame. Move your head in a circular direction._
-
-  
 
 ![Figure 8: Take Selfie](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006776640%2Foriginal%2FSXyD6m2mUCaKNX4IWXXvXmX79L-9cc6_VA.png%3F1707889130&width=768&dpr=4&quality=100&sign=d21e1c4a0940af4d19978d4c4da402a936571f25b0db40e670a6dd361bda1d94)
 

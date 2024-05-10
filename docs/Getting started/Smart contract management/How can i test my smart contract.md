@@ -2,15 +2,12 @@
 
 This guide empowers you to leverage Kalp Studio for efficient smart contract deployment and streamlined testing. Discover how to seamlessly deploy your smart contracts and effectively test them.
 
-### 
-
-Smart Contract Verification and Testing
+### Smart Contract Verification and Testing
 
 **Step 1:** Verify your smart contract's syntax and functionality by compiling it using the following command:
 
-Copy
 
-```
+``` go
 $ go build .
 ```
 
@@ -18,14 +15,11 @@ $ go build .
 
 **Step 3:** Proceed to test your smart contract to ensure its behavior aligns with your expectations. Utilize appropriate testing frameworks or unit tests to simulate interactions with your smart contract and verify its outputs. This step is crucial for identifying and rectifying any potential issues before deployment.
 
-### 
-
-Interacting with Your Smart Contract
+### Interacting with Your Smart Contract
 
 1.  Establish a connection to the relevant blockchain network, enabling your application to interact with the deployed smart contracts.
     
 2.  Kalp Studio automatically generates API endpoints that directly map to the functionalities of your smart contracts. These endpoints simplify integration by providing a well-defined interface for your front-end application to interact with the underlying smart contract logic.
-    
 
 ![](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2F1878384301-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FzAA5Z6u1ZyGAxXbYfExA%252Fuploads%252F4eFcGDZUhlmBIxX7Yhe0%252Fimage.png%3Falt=media%26token=7c749d34-9630-49db-a3b3-4f97f5be6e74&width=768&dpr=4&quality=100&sign=280db35a01fda00599887f23fa10c2c417c294dd1ecf8c4d37aedb8a8f7762b8)
 
@@ -39,9 +33,7 @@ _**Check out the Freshdesk Article: How to deploy a Smart Contract? or How Can I
 -   **Checking and Testing API Endpoints:** Employ **Postman**, a popular API testing tool, to send requests to the generated API endpoints. This method facilitates individual function testing, allowing you to verify their behavior and outputs in a controlled environment before integrating them into your front-end application.
     
 
-### 
-
-Postman Testing for Kalp Smart Contract API Endpoints
+### Postman Testing for Kalp Smart Contract API Endpoints
 
 Following successful smart contract deployment and API endpoint generation within Kalp Studio, delve into the essential steps for testing these endpoints using Postman:
 
@@ -74,8 +66,6 @@ Sample Result: MintBatch Function
 
 **Example:** All the Functions provided as: `PutStateWithKYC, DelStateWithoutKYC, DelStateWithKYC, GetState, GetTxID, GetChannelD, SetEvent, GetUserID.`
 
-### 
-
-Conclusion
+### Conclusion
 
 You're now ready to begin your journey as a Kalp blockchain developer. Experiment with different types of smart contracts, explore the functionalities offered by the Kalp SDK, and start building innovative DApps on the Kalp blockchain.

@@ -57,19 +57,11 @@ The sign-up screen will be displayed.
 
 >  -  **Length:** Your password needs to be a minimum of 8 characters but no more than 20. This range ensures security while being user-friendly.
 
->
-
 >  -  **Uppercase Letter:** At least one capital letter for added password strength.
-
->
 
 >  -  **Lowercase Letter:** At least one small letter to ensure complexity.
 
->
-
 >  -  **Special Character:** Include at least one character like !, @, $, #, or % for enhanced security.
-
->
 
 >  -  **Number:** At least one numeral is required for an additional layer of complexity. 
 

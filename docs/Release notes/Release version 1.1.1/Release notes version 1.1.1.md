@@ -1,4 +1,4 @@
-# 🏅Kalp studio version 1.1.1
+# Kalp studio version 1.1.1
 
 ## Introduction
 
@@ -38,8 +38,3 @@ Get the most out of Kalp Studio with our library of informative  [**Support Arti
 We value your feedback and encourage you to share any suggestions or report any issues you encounter, Raise a ticket at - [**care@kalp.studio**](https://care.kalp.studio/support/home).
 
 We look forward to your continued support as we work towards a stable and feature-rich release.
-
-Best regards, Kalp Studio
-
-[  
-](https://docs.kalp.studio/ks/welcome-to-kalp-studio-docs/release-notes/kalp-studio-version-1.1.0)

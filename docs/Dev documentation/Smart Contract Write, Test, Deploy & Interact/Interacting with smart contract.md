@@ -1,7 +1,6 @@
 # Interacting with smart contract
 
-
-Interacting with Your Smart Contract
+## Interacting with Your Smart Contract
 
 1.  Establish a connection to the relevant blockchain network, enabling your application to interact with the deployed smart contracts.
     
@@ -18,7 +17,7 @@ _**Check out the Freshdesk Article: How to deploy a Smart Contract? or How Can I
 
 -   **Checking and Testing API Endpoints:**  Employ  **Postman**, a popular API testing tool, to send requests to the generated API endpoints. This method facilitates individual function testing, allowing you to verify their behavior and outputs in a controlled environment before integrating them into your front-end application.
 
-Postman Testing for Kalp Smart Contract API Endpoints
+### Postman Testing for Kalp Smart Contract API Endpoints
 
 Following successful smart contract deployment and API endpoint generation within Kalp Studio, delve into the essential steps for testing these endpoints using Postman:
 

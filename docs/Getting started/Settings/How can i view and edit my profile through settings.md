@@ -8,9 +8,7 @@ Your profile in settings refers to the section where you can manage your account
 
 You can view/edit your profile any time you want by following simple steps.
 
-### 
-
-View Profile
+### View Profile
 
 **Step 1:**
 
@@ -29,17 +27,13 @@ To view your profile information, click on the “**Profile icon”** at the top
 
 Click on **Your Profile**.
 
-![](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006983553%2Foriginal%2FHWupG9gPluD9JHadceUb0o6Xf5au4K_yEA.png%3F1708425201&width=768&dpr=4&quality=100&sign=a59f0740aa038178aea6fa71a9c699a99279b50a319435bde4e9142307793240)
-
-Figure 1: Your Profile
+![Figure 1: Your Profile](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006983553%2Foriginal%2FHWupG9gPluD9JHadceUb0o6Xf5au4K_yEA.png%3F1708425201&width=768&dpr=4&quality=100&sign=a59f0740aa038178aea6fa71a9c699a99279b50a319435bde4e9142307793240)
 
 **Step 3:**
 
 The Settings window is displayed with two tabs. Personal and API Auth Key.
 
-![](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006983723%2Foriginal%2FQm4MumC-Y5-XLhZwIBya6MQZBnoLyl19Og.png%3F1708425298&width=768&dpr=4&quality=100&sign=2bbe8c0e52ca816d7768897773bf680755b56ae0c2071fd535945554b587e5dc)
-
-Figure 2: Settings
+![Figure 2: Settings](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006983723%2Foriginal%2FQm4MumC-Y5-XLhZwIBya6MQZBnoLyl19Og.png%3F1708425298&width=768&dpr=4&quality=100&sign=2bbe8c0e52ca816d7768897773bf680755b56ae0c2071fd535945554b587e5dc)
 
 **Personal Tab**
 
@@ -47,9 +41,7 @@ Figure 2: Settings
 
 The Personal tab shows your profile details, security (password details), KALP ID, and KYC status.
 
-![](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006983808%2Foriginal%2FOIFbXiCKjcjq1jRvtP3AsFjzE17KOdI81g.png%3F1708425384&width=768&dpr=4&quality=100&sign=86455afa94c885a49873f299d835ed316726d7413d5de05b6dfb1afb9fe2fea3)
-
-Figure 3: Your Profile
+![Figure 3: Your Profile](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006983808%2Foriginal%2FOIFbXiCKjcjq1jRvtP3AsFjzE17KOdI81g.png%3F1708425384&width=768&dpr=4&quality=100&sign=86455afa94c885a49873f299d835ed316726d7413d5de05b6dfb1afb9fe2fea3)
 
 The following details are displayed:
 
@@ -70,9 +62,7 @@ The following details are displayed:
 
 Click on **Change Password** to change the current password and enter a new password.
 
-![](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006833119%2Foriginal%2FEt8fa_hTQMbx0VSB87yNeZu-UiO0y8XwIg.png%3F1707996574&width=768&dpr=4&quality=100&sign=01de4324434d629d599936d5769a0d21fdca61be1ffa11cd4820c27cdbc9c8f9)
-
-Figure 4: Change Password
+![Figure 4: Change Password](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006833119%2Foriginal%2FEt8fa_hTQMbx0VSB87yNeZu-UiO0y8XwIg.png%3F1707996574&width=768&dpr=4&quality=100&sign=01de4324434d629d599936d5769a0d21fdca61be1ffa11cd4820c27cdbc9c8f9)
 
 1. Enter your Old Password.
 
@@ -98,17 +88,13 @@ Figure 4: Change Password
 
 Click on **Save** to save the entered password details.
 
-### 
-
-Edit Profile
+### Edit Profile
 
 **Step 6:**
 
 On the Personal tab, click on **Edit** to modify profile details.
 
-![](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006983885%2Foriginal%2FMf6pcLKcWeg3PfPJA1PiGlgePt2eQeNIYw.png%3F1708425468&width=768&dpr=4&quality=100&sign=e6c2948e42dab140b1303dc0f29a42ed8a1f6b37e66ab36f82f815d53b13424d)
-
-Figure 5: Edit
+![Figure 5: Edit](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006983885%2Foriginal%2FMf6pcLKcWeg3PfPJA1PiGlgePt2eQeNIYw.png%3F1708425468&width=768&dpr=4&quality=100&sign=e6c2948e42dab140b1303dc0f29a42ed8a1f6b37e66ab36f82f815d53b13424d)
 
 You can modify the Name. Email and User ID cannot be changed. Click on **Save** to save the entered details.
 
@@ -120,15 +106,11 @@ Click on the **API** **Auth Key** tab. Details of previously generated API Auth 
 
 > _**Note:**_ _10 records per page are displayed._
 
-![](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006983941%2Foriginal%2FJJimbX009VEN7xZTEC-ldrvF0apBgMTCTQ.png%3F1708425529&width=768&dpr=4&quality=100&sign=7b993deb076dbb48b65ed5b92eb72a980d0b35c9032662f94488af295d288ca7)
-
-Figure 6: API Auth Key
+![Figure 6: API Auth Key](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006983941%2Foriginal%2FJJimbX009VEN7xZTEC-ldrvF0apBgMTCTQ.png%3F1708425529&width=768&dpr=4&quality=100&sign=7b993deb076dbb48b65ed5b92eb72a980d0b35c9032662f94488af295d288ca7)
 
 Click on **Create API Auth Key** to create a new API Auth Key.
 
-![](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006835003%2Foriginal%2Fxym3mEqGmSIkjSFy3JWW8w8h5Z51JnzACw.png%3F1707998352&width=768&dpr=4&quality=100&sign=f47d2c659830294a75829362250c8d3ae440a4e4787cc19666593b313447ae20)
-
-Figure 7: Create Key
+![Figure 7: Create Key](https://docs.kalp.studio/~gitbook/image?url=https:%2F%2Fs3-ap-south-1.amazonaws.com%2Find-cdn.freshdesk.com%2Fdata%2Fhelpdesk%2Fattachments%2Fproduction%2F1060006835003%2Foriginal%2Fxym3mEqGmSIkjSFy3JWW8w8h5Z51JnzACw.png%3F1707998352&width=768&dpr=4&quality=100&sign=f47d2c659830294a75829362250c8d3ae440a4e4787cc19666593b313447ae20)
 
 1. Enter the Key Name.
 
