@@ -1,16 +1,18 @@
 site_name: Kalp Studio Documentation
 site_author: Siddhesh Patankar
 copyright: Copyright © 2024 Kalp studio. All rights reserved.
-repo_url: https://github.com/siddheshp2e/Kalpstudio
-site_url: https://siddheshp2e.github.io/Kalpstudio/
-repo_name: Kalp studio documentation
+repo_url: https://github.com/p2eengineering/kalp-studio-documentation
+site_url: https://doc.kalp.studio/
+repo_name: Kalp-studio-documentation
 
 theme:
-  font: 
-    code: Open Sans
+  extra_css:
+    - stylesheets/extra.css
+  font:
+    text: Source Sans 3, sans-serif
   name: material
-  logo: images/PNG.png
-    #- link: Introduction/Welcome.md
+  logo: images/PNG.png 
+    #- link: Introduction/welcome.md
   favicon: images/PNG.png
   features:
     - announce.dismiss
@@ -56,7 +58,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       primary: white
       scheme: default
-      accent: deep orange 
+      accent: deep orange
       toggle:
         icon: material/eye
         name: Switch to dark mode
@@ -127,70 +129,80 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Introduction: 'Introduction/Welcome.md'
+  - Introduction: 
+          - Kalp studio overview: 'Introduction/Kalp-studio-overview.md'
+          - Kalp studio ecosystem: 'Introduction/Kalp-studio-ecosystem.md'
+          - What is smart contract deployer: 'Introduction/What-is-kalp-instant-deployer.md'
+          - What is kalp studio wallet: 'Introduction/What-is-kalp-studio-wallet.md'
+          - Kalp DLT: 'Introduction/Kalp-DLT.md'
   - Getting started:
-      - User onboarding:
-          - Create an account: 'Getting started/User onboarding/Create an account.md'
-          - KYC Process - International Users: 'Getting started/User onboarding/KYC Process - International Users.md'
-          - KYC Process - Indian Users: 'Getting started/User onboarding/KYC Process - Indian Users.md'
-          - Explore kalp studio: 'Getting started/User onboarding/Explore kalp studio.md'
-      - Project management:
-          - Creating a kalp studio project: 'Getting started/Project management/Creating a kalp studio project.md'
-          - How do view & edit my projects: 'Getting started/Project management/How do view & edit my projects.md'
-      - Smart contract management:
-          - How do i write a smart contract: 'Getting started/Smart contract management/How do i write a smart contract.md'
-          - How do i deploy a smart contract: 'Getting started/Smart contract management/How do i deploy a smart contract.md'
-          - How can i test my smart contract: 'Getting started/Smart contract management/How can i test my smart contract.md'
-          - How can I view the list of my Smart Contracts: 'Getting started/Smart contract management/How can I view the list of my Smart Contracts.md'
-          - How can i check if my smart contract is deployed on kalp blockchain: 'Getting started/Smart contract management/How can i check if my smart contract is deployed on kalp blockchain.md'
-          - What are my smart contract details, Transactions, and API Endpoints: 'Getting started/Smart contract management/What are my smart contract details, Transactions, and API Endpoints.md'
-          - How do i deploy my smart contract: 'Getting started/Smart contract management/How do i deploy my smart contract.md'
-          - How can i perform transactions using API endpoints: 'Getting started/Smart contract management/How can i perform transactions using API endpoints.md'
-      - Kalp Wallet Management:
-          - How can i add funds to my kalp wallet: 'Getting started/Kalp Wallet Management/How can i add funds to my kalp wallet.md'
-          - How can i view fund balance and payment transactions: 'Getting started/Kalp Wallet Management/How can i view fund balance and payment transactions.md'
+      - Onboarding:
+          - How to Sign Up and Log In to Kalp Studio Platform: 'Getting-started/Onboarding/How-to-Sign-Up-and-Log-In-to-Kalp-Studio-Platform.md'
+          - How to Change the Password: 'Getting-started/Onboarding/How-to-Change-the-Password.md'
+      - Dashboard:
+          - How to Navigate Kalp Studio Platform as a New User: 'Getting-started/Dashboard/How-to-Navigate-Kalp-Studio-Platform-as-a-New-User.md'
+          - How to Navigate Kalp Studio Dashboard as an Active User: 'Getting-started/Dashboard/How-to-Navigate-Kalp-Studio-Dashboard-as-an-Active-User.md'
+      - Billing:
+          - How does a new user access billing: 'Getting-started/Billing/How-does-a-new-user-access-billing.md'
+          - How does a subscribed user access billing: 'Getting-started/Billing/How-does-a-subscribed-user-access-billing.md'
+          - How does Billing work on the Kalp Studio Platform: 'Getting-started/Billing/How-does-Billing-work-on-the-Kalp-Studio-Platform.md'
+      - Credits:
+          - How to Add Credit: 'Getting-started/Credits/How-to-Add-Credit.md'
+          - Navigate to the credit section: 'Getting-started/Credits/Navigate-to-the-Credit-Section.md'
+      - Kalp-studio-wallet:
+          - How to Navigate To kalp studio Wallet: 'Getting-started/Kalp-studio-wallet/How-to-Navigate-To-kalp-studio-Wallet.md'
+          - How to Create and Connect Wallet to Kalp Studio: 'Getting-started/Kalp-studio-wallet/How-to-Create-and-Connect-Wallet-to-Kalp-Studio.md'
+      - Kalp Instant Deployer:
+          - How to Deploy a Smart Contract on Kalp Studio: 'Getting-started/Kalp-Instant-Deployer/How-to-Deploy-a-Smart-Contract-on-Kalp-Studio.md'
+      - API Gateway:
+          - How to generate API endpoints: 'Getting-started/API-Gateway/How-to-generate-API-endpoints.md'
+          - How to navigate to the list of smart contract: 'Getting-started/API-Gateway/How-to-Navigate-to-the-List-of-Smart-Contract.md'
+      - API Key Generation:
+          - How to generate API Key: 'Getting-started/API-Key-Generation/How-to-generate-API-Key.md'
+      - Transaction monitoring:
+          - How can I monitor all my transactions: 'Getting-started/Transaction-monitoring/How-can-I-monitor-all-my-transactions.md'
       - Settings:
-          - How can i view and edit my profile through settings: 'Getting started/Settings/How can i view and edit my profile through settings.md'
-          - How can I create an API Auth Key: 'Getting started/Settings/How can i create an API Auth key.md'
+          - How to Process KYC and get purchased template list: 'Getting-started/Settings/How-to-Process-KYC-and-get-purchased-template-list.md'
   - Dev documentation:
       - Use the kalp SDK:
-          - Kalp Golang SDK: 'Dev documentation/Use the kalp SDK/Kalp Golang SDK.md'
+          - Kalp Golang SDK: 'Dev-documentation/Use-the-kalp-sdk/Kalp-golang-sdk.md'
       - KRC Token Standard:
-          - KRC 20 Token Contract: 'Dev documentation/KRC Token Standard/KRC 20 Token Contract.md'
-          - KRC 721 Token Contract: 'Dev documentation/KRC Token Standard/KRC 721 Token Contract.md'
-          - KRC 1155 Token Contract: 'Dev documentation/KRC Token Standard/KRC 1155 Token Contract.md'
+          - KRC 20 Token Contract: 'Dev-documentation/KRC-Token-Standard/KRC-20-Token-Contract.md'
+          - KRC 721 Token Contract: 'Dev-documentation/KRC-Token-Standard/KRC-721-Token-Contract.md'
+          - KRC 1155 Token Contract: 'Dev-documentation/KRC-Token-Standard/KRC-1155-Token-Contract.md'
       - Smart Contract Write,Test, Deploy & Interact:
-          - Write the smart contract: 'Dev documentation/Smart Contract Write, Test, Deploy & Interact/Write the smart contract.md'
-          - Test the smart contract: 'Dev documentation/Smart Contract Write, Test, Deploy & Interact/Test the smart contract.md'
-          - Deploy the smart contract: 'Dev documentation/Smart Contract Write, Test, Deploy & Interact/Deploy the smart contract.md'
-          - Interacting with smart contract: 'Dev documentation/Smart Contract Write, Test, Deploy & Interact/Interacting with smart contract.md'
+          - Write the smart contract: 'Dev-documentation/Smart-Contract-Write-Test-Deploy-Interact/Write-the-smart-contract.md'
+          - Test the smart contract: 'Dev-documentation/Smart-Contract-Write-Test-Deploy-Interact/Test-the-smart-contract.md'
+          - Deploy the smart contract: 'Dev-documentation/Smart-Contract-Write-Test-Deploy-Interact/Deploy-the-smart-contract.md'
+          - Interacting with smart contract: 'Dev-documentation/Smart-Contract-Write-Test-Deploy-Interact/Interacting-with-smart-contract.md'
   - Release notes:
-      - Release version 1.0.0:
-          - Release notes version 1.0.0: 'Release notes/Release version 1.0.0/Release notes version 1.0.0.md'
-      - Release version 1.1.0:  
-          - Release notes version 1.1.0: 'Release notes/Release version 1.1.0/Release notes version 1.1.0.md'
+      - Release version 2.0.0:
+          - Release notes version 2.0.0: 'Release-notes/release-version-2.0.0/release-notes-version-2.0.0.md'
       - Release version 1.1.1:
-          - Release notes version 1.1.1: 'Release notes/Release version 1.1.1/Release notes version 1.1.1.md'
-
+          - Release notes version 1.1.1: 'Release-notes/release-version-1.1.1/release-notes-version-1.1.1.md'
+      - Release version 1.1.0:  
+          - Release notes version 1.1.0: 'Release-notes/release-version-1.1.0/release-notes-version-1.1.0.md'
+      - Release version 1.0.0:
+          - Release notes version 1.0.0: 'Release-notes/release-version-1.0.0/release-notes-version-1.0.0.md'    
 extra:
   social:
 
     - icon: fontawesome/brands/github
-      link: https://github.com
+      link: https://github.com/thekalpstudio/
   
     - icon: fontawesome/brands/x-twitter 
-      link: https://x.com/kalpstudio
+      link: https://twitter.com/Kalp_Studio
 
     - icon: fontawesome/brands/facebook 
-      link: https://facebook.com/@kalpstudio
+      link: https://www.facebook.com/people/Kalp-Studio/61558481045861/
 
     - icon: fontawesome/brands/instagram 
-      link: https://instagram.com/@kalpstudio
+      link: https://www.instagram.com/kalpstudio.official/
 
     - icon: fontawesome/brands/linkedin 
-      link: https://linkedin.com/@kalpstudio
+      link: https://www.linkedin.com/company/studio-kalp/
 
     - icon: fontawesome/brands/discord
-      link: https://discord.com/@kalpstudio
+      link: https://discord.com/invite/JhD7GFVvfv
 
   generator: false

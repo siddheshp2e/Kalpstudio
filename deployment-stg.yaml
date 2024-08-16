@@ -1,0 +1,71 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: stg
+  name: kalp-studio-doc-stg-deployment
+  labels:
+    app: kalp-studio-doc-stg
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kalp-studio-doc-stg
+  template:
+    metadata:
+      labels:
+        app: kalp-studio-doc-stg
+    spec:
+      hostname: kalp-studio-doc-stg
+      nodeSelector:
+        noderole:	generic
+      containers:
+        - name: kalp-studio-doc-stg
+          image: 408153089286.dkr.ecr.ap-south-1.amazonaws.com/kalp-studio-doc-stg:<VERSION>
+          imagePullPolicy: IfNotPresent
+          resources:
+            requests:
+              memory: '500Mi'
+              cpu: '250m'
+            limits:
+              memory: '500Mi'
+              cpu: '250m'
+          # readinessProbe:
+          #     httpGet:
+          #       path: /health-check
+          #       port: 8000
+          #     initialDelaySeconds: 30
+          #     timeoutSeconds: 10
+          # livenessProbe:
+          #     httpGet:
+          #       path: /health-check
+          #       port: 8000
+          #     initialDelaySeconds: 30
+          #     periodSeconds: 5
+          #     timeoutSeconds: 10
+          #     failureThreshold: 4
+          ports:
+            - name: http
+              containerPort: 8000
+              protocol: TCP
+          # env:
+          #   - name: LOG_LEVEL
+          #     valueFrom:
+          #       secretKeyRef:
+          #         key: LOG_LEVEL
+          #         name: stg-kalp-studio-doc 
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: stg
+  name: kalp-studio-doc-stg-svc
+  labels:
+    svc: kalp-studio-doc-stg
+spec:
+  type: ClusterIP
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8000
+  selector:
+    app: kalp-studio-doc-stg

@@ -1,0 +1,69 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: kalp-studio-prod
+  name: kalp-studio-doc-prod-deployment
+  labels:
+    app: kalp-studio-doc-prod
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kalp-studio-doc-prod
+  template:
+    metadata:
+      labels:
+        app: kalp-studio-doc-prod
+    spec:
+      hostname: kalp-studio-doc-prod
+      containers:
+        - name: kalp-studio-doc-prod
+          image: 408153089286.dkr.ecr.ap-south-1.amazonaws.com/kalp-studio-doc-stg:<VERSION>
+          imagePullPolicy: IfNotPresent
+          resources:
+            requests:
+              memory: '1024Mi'
+              cpu: '500m'
+            limits:
+              memory: '1024Mi'
+              cpu: '500m'
+          # readinessProbe:
+          #     httpGet:
+          #       path: /health-check
+          #       port: 8000
+          #     initialDelaySeconds: 30
+          #     timeoutSeconds: 10
+          # livenessProbe:
+          #     httpGet:
+          #       path: /health-check
+          #       port: 8000
+          #     initialDelaySeconds: 30
+          #     periodSeconds: 5
+          #     timeoutSeconds: 10
+          #     failureThreshold: 4
+          ports:
+            - name: http
+              containerPort: 8000
+              protocol: TCP
+          # env:
+          #   - name: LOG_LEVEL
+          #     valueFrom:
+          #       secretKeyRef:
+          #         key: LOG_LEVEL
+          #         name: prod-kalp-studio-doc 
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: kalp-studio-prod
+  name: kalp-studio-doc-prod-svc
+  labels:
+    svc: kalp-studio-doc-prod
+spec:
+  type: ClusterIP
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8000
+  selector:
+    app: kalp-studio-doc-prod
